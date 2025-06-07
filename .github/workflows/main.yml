@@ -2,8 +2,7 @@ name: BookMyShow Event Scraper
 
 on:
   schedule:
-    # Run daily at 8:00 AM UTC (1:30 PM IST)
-    - cron: '0 8 * * *'
+    - cron: '0 8 * * *'  # 8:00 AM UTC (1:30 PM IST)
   workflow_dispatch:
 
 jobs:
@@ -38,35 +37,36 @@ jobs:
         mkdir -p reports
         mkdir -p screenshots
         
-    - name: Run URL fetcher (01_url_fetcher.py)
+    - name: Run URL fetcher
       run: python 01_url_fetcher.py
       
-    - name: Run screenshot capture (02_url_to_ss.py)
+    - name: Run screenshot capture
       run: python 02_url_to_ss.py
       
-    - name: Run OCR processing (03_ss_to_json.py)
+    - name: Upload screenshots (if any)
+      uses: actions/upload-artifact@v4
+      continue-on-error: true
+      with:
+        name: event-screenshots
+        path: screenshots/
+        
+    - name: Upload reports (if any)
+      uses: actions/upload-artifact@v4
+      continue-on-error: true
+      with:
+        name: event-reports
+        path: reports/
+        
+    - name: Run OCR processing
       run: python 03_ss_to_json.py
       
-    - name: Convert to Excel (04_json_to_excel.py)
+    - name: Convert to Excel
       run: python 04_json_to_excel.py
       
-    - name: Upload to Google Sheets (05_upload_to_sheets.py)
+    - name: Upload to Google Sheets
       env:
         SERVICE_ACCOUNT_KEY: ${{ secrets.SERVICE_ACCOUNT_KEY }}
       run: |
         echo "$SERVICE_ACCOUNT_KEY" > service_account.json
         python 05_upload_to_sheets.py
-        
-    - name: Upload screenshots as artifact
-      uses: actions/upload-artifact@v4
-      if: always()
-      with:
-        name: event-screenshots
-        path: screenshots/*.png
-        
-    - name: Upload reports as artifact
-      uses: actions/upload-artifact@v4
-      if: always()
-      with:
-        name: event-reports
-        path: reports/*.txt
+        rm -f service_account.json
