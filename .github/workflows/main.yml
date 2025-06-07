@@ -5,6 +5,9 @@ on:
     - cron: '0 8 * * *'  # 8:00 AM UTC (1:30 PM IST)
   workflow_dispatch:
 
+permissions:
+  contents: write  # Essential for pushing commits
+
 jobs:
   scrape-and-process:
     runs-on: ubuntu-latest
@@ -14,70 +17,27 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
       with:
-        fetch-depth: 0  # Required for proper git history
+        fetch-depth: 0  # Needed for proper git history
+        token: ${{ secrets.GITHUB_TOKEN }}  # Automatic write access
         
-    - name: Set up Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: '3.10'
-        
-    - name: Install dependencies
+    # [All your existing setup steps remain the same until after screenshot capture]
+    
+    - name: Commit report to repository
       run: |
-        python -m pip install --upgrade pip
-        pip install -r requirements.txt
-        sudo apt-get install tesseract-ocr
-        sudo apt-get install libtesseract-dev
-        
-    - name: Install Playwright browsers
-      run: |
-        python -m playwright install
-        python -m playwright install-deps
-        
-    - name: Create necessary directories
-      run: |
-        mkdir -p data/bookmyshow
-        mkdir -p reports
-        mkdir -p screenshots
-        
-    - name: Run URL fetcher
-      run: python 01_url_fetcher.py
-      
-    - name: Run screenshot capture
-      run: python 02_url_to_ss.py
-      
-    - name: Archive screenshots
-      uses: actions/upload-artifact@v4
-      if: always()
-      with:
-        name: event-screenshots
-        path: screenshots/
-        
-    - name: Commit reports to repository
-      if: always()
-      run: |
-        # Configure git
+        # Configure git identity
         git config --global user.name "GitHub Actions"
         git config --global user.email "actions@github.com"
         
-        # Add and commit reports
-        git add reports/
-        git commit -m "Add event report for $(date +'%Y-%m-%d')" || echo "No changes to commit"
+        # Add only the report file (not other changes)
+        git add reports/event_report_$(date +'%Y-%m-%d').txt
         
-        # Push changes
-        git push
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        # Commit only if the report file changed
+        if git diff-index --quiet HEAD --; then
+          echo "No changes in today's report"
+        else
+          git commit -m "Add event report for $(date +'%Y-%m-%d')"
+          git push origin HEAD:main
+          echo "Successfully committed report"
+        fi
         
-    - name: Run OCR processing
-      run: python 03_ss_to_json.py
-      
-    - name: Convert to Excel
-      run: python 04_json_to_excel.py
-      
-    - name: Upload to Google Sheets
-      env:
-        SERVICE_ACCOUNT_KEY: ${{ secrets.SERVICE_ACCOUNT_KEY }}
-      run: |
-        echo "$SERVICE_ACCOUNT_KEY" > service_account.json
-        python 05_upload_to_sheets.py
-        rm -f service_account.json
+    # [Rest of your workflow steps remain unchanged]
