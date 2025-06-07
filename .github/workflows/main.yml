@@ -20,22 +20,22 @@ jobs:
         python-version: '3.10'
         
     - name: Install system dependencies
-      run: |
-        sudo apt-get update
-        sudo apt-get install -y \
-          tesseract-ocr \
-          libtesseract-dev \
-          python3-dev \
-          python3-pip \
-          python3-venv \
-          xvfb \
-          libgtk-3-0 \
-          libnotify-dev \
-          libgconf-2-4 \
-          libnss3 \
-          libxss1 \
-          libasound2 \
-          libxtst6
+  run: |
+    sudo apt-get update -y
+    sudo apt-get install -y \
+      tesseract-ocr \
+      libtesseract-dev \
+      python3-dev \
+      python3-pip \
+      python3-venv \
+      xvfb \
+      libgtk-3-0 \
+      libnotify-dev \
+      libnss3 \
+      libxss1 \
+      libxtst6 \
+      libasound2 \
+      libgbm-dev
         
     - name: Install Python dependencies
       run: |
