@@ -1,0 +1,56 @@
+
+=== Event Comparison Results ===
+Old file: 32 events
+New file: 14 events
+Comparison time: 2025-06-07 17:54:28
+
+Newly added events (1):
+- Anirban Dasgupta Live
+  URL:  https://in.bookmyshow.com/events/anirban-dasgupta-live/ET00319217
+
+Removed events (19):
+- Girish And The Chronicles (Originals & Covers)
+  URL:  https://in.bookmyshow.com/events/girish-and-the-chronicles-originals-covers/ET00447177
+- Paint with Puppies by Barket
+  URL:  https://in.bookmyshow.com/events/valentine-s-special-paint-with-puppies-kittens/ET00432354
+- Jo Bolta Hai Wohi Hota Hai Ft. Harsh Gujral
+  URL:  https://in.bookmyshow.com/events/jo-bolta-hai-wohi-hota-hai-ft-by-harsh-gujral/ET00319088
+- Comedy Nights Noida
+  URL:  https://in.bookmyshow.com/events/comedy-nights-noida/ET00407257
+- Comedy Nights @Comedy County
+  URL:  https://in.bookmyshow.com/events/comedy-nights-comedy-county/ET00446925
+- Ravi Gupta Live : Birch Noida
+  URL:  https://in.bookmyshow.com/events/ravi-gupta-live-birch-noida/ET00446633
+- Tara Sitara Night ft. Gurdas Maan Live at Khubani
+  URL:  https://in.bookmyshow.com/events/tara-sitara-night-ft-gurdas-maan-live-at-khubani/ET00447668
+- Rambo Circus - Delhi
+  URL:  https://in.bookmyshow.com/events/rambo-circus/ET00332998
+- Kal ki Chinta Nahi Karta ft. Ravi Gupta
+  URL:  https://in.bookmyshow.com/events/kal-ki-chinta-nahi-karta-ft-ravi-gupta/ET00329412
+- A NIGHT OF LAUGHTER FT GAURAV GUPTA
+  URL:  https://in.bookmyshow.com/events/a-night-of-laughter-ft-gaurav-gupta/ET00400535
+- Swiftchella - A Taylor Swift-Themed Fan Party
+  URL:  https://in.bookmyshow.com/events/swiftchella-a-taylor-swift-themed-fan-party/ET00441036
+- Banger Issues ft. Kaustubh Aggarwal
+  URL:  https://in.bookmyshow.com/events/banger-issues-ft-kaustubh-aggarwal/ET00445762
+- KidZania Delhi
+  URL:  https://in.bookmyshow.com/events/kidzania-delhi-tickets/ET00042240
+- Pottery Workshop
+  URL:  https://in.bookmyshow.com/events/pottery-workshop/ET00443207
+- Best of Stand-up - Stand-up Comedy Show
+  URL:  https://in.bookmyshow.com/events/best-of-standup-inder-shreya-kd/ET00358274
+- PS - I Love You By Pranav Sharma
+  URL:  https://in.bookmyshow.com/events/taaza-phool-ft-pranav-sharma/ET00408533
+- Nayab Midha Live
+  URL:  https://in.bookmyshow.com/events/the-nayab-show-ft-nayab-midha/ET00371345
+- SONU NIGAM LIVE IN CONCERT GURUGRAM
+  URL:  https://in.bookmyshow.com/events/sonu-nigam-live-in-concert-gurugram/ET00439782
+- Adult Standup Comedy Show
+  URL:  https://in.bookmyshow.com/events/adult-standup-comedy-show/ET00440230
+
+=== New Events Summary ===
+
+1. Anirban Dasgupta Live
+   Venue: N/A
+   Date: N/A
+   URL:  https://in.bookmyshow.com/events/anirban-dasgupta-live/ET00319217
