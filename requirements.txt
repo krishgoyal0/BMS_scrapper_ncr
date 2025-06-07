@@ -1,0 +1,7 @@
+playwright
+pandas
+pytesseract
+Pillow
+gspread
+python-dateutil
+openpyxl
