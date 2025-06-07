@@ -16,7 +16,7 @@ async def take_initial_screenshot(url, output_file, attempt=1):
         
         try:
             browser = await p.chromium.launch(
-                headless=False,
+                headless=True,
                 args=[
                     "--disable-blink-features=AutomationControlled",
                     "--start-maximized"
