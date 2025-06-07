@@ -13,7 +13,9 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
-      
+      with:
+        fetch-depth: 0  # Required for proper git history
+        
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
@@ -43,19 +45,28 @@ jobs:
     - name: Run screenshot capture
       run: python 02_url_to_ss.py
       
-    - name: Upload screenshots (if any)
+    - name: Archive screenshots
       uses: actions/upload-artifact@v4
-      continue-on-error: true
+      if: always()
       with:
         name: event-screenshots
         path: screenshots/
         
-    - name: Upload reports (if any)
-      uses: actions/upload-artifact@v4
-      continue-on-error: true
-      with:
-        name: event-reports
-        path: reports/
+    - name: Commit reports to repository
+      if: always()
+      run: |
+        # Configure git
+        git config --global user.name "GitHub Actions"
+        git config --global user.email "actions@github.com"
+        
+        # Add and commit reports
+        git add reports/
+        git commit -m "Add event report for $(date +'%Y-%m-%d')" || echo "No changes to commit"
+        
+        # Push changes
+        git push
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         
     - name: Run OCR processing
       run: python 03_ss_to_json.py
