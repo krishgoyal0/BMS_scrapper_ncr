@@ -2,25 +2,25 @@ name: BookMyShow Event Scraper
 
 on:
   schedule:
-    - cron: '0 9,20 * * *'  # Runs at 9 AM and 8 PM UTC (2:30 PM and 1:30 AM IST)
-  workflow_dispatch:  # Allows manual triggering
+    - cron: '0 9,20 * * *'
+  workflow_dispatch:
 
 permissions:
-  contents: write  # Required for pushing changes back to repo
+  contents: write
 
 jobs:
   scrape-and-process:
     runs-on: ubuntu-latest
     
     steps:
-    # --- Repository Setup ---
+    # --- Setup ---
     - name: Checkout repository
       uses: actions/checkout@v4
       with:
-        fetch-depth: 0  # Required for git history operations
-        persist-credentials: true  # Maintains auth for push
+        fetch-depth: 0
+        persist-credentials: true
 
-    # --- Python Environment ---
+    # --- Environment ---
     - name: Set up Python
       uses: actions/setup-python@v5
       with:
@@ -29,7 +29,7 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install playwright pytesseract pandas gspread openpyxl pillow jq
+        pip install -r requirements.txt
         playwright install chromium
         playwright install-deps
 
@@ -47,39 +47,45 @@ jobs:
       run: python 04_json_to_excel.py
 
     # --- Google Sheets Upload ---
+    - name: Validate service account
+      run: |
+        if [ ! -f "service_account.json" ]; then
+          echo "$GOOGLE_CREDENTIALS" > service_account.json
+          jq empty service_account.json || exit 1
+        fi
+
     - name: Upload to Google Sheets
       env:
         GOOGLE_CREDENTIALS: ${{ secrets.GOOGLE_SERVICE_ACCOUNT }}
-      run: |
-        # Create and validate service account JSON
-        echo "$GOOGLE_CREDENTIALS" > service_account.json
-        if ! jq empty service_account.json; then
-          echo " Invalid service account JSON!"
-          exit 1
-        fi
-        python 05_upload_to_sheets.py
+      run: python 05_upload_to_sheets.py
 
     # --- Git Operations ---
-    - name: Commit and push changes
+    - name: Commit changes
+      id: commit
       run: |
         git config --global user.name "GitHub Actions"
         git config --global user.email "actions@github.com"
         git add data/ reports/
-        if git diff --quiet --cached; then
-          echo "No changes to commit"
+        if git diff --cached --quiet; then
+          echo "changes=false" >> $GITHUB_OUTPUT
         else
           git commit -m "Auto-update: Event data [skip ci]"
-          git pull --rebase
-          git push
+          echo "changes=true" >> $GITHUB_OUTPUT
         fi
 
+    - name: Push changes
+      if: steps.commit.outputs.changes == 'true'
+      run: |
+        git fetch
+        git rebase origin/main
+        git push
+
     # --- Artifacts ---
-    - name: Upload results as artifact
+    - name: Archive results
       uses: actions/upload-artifact@v4
       with:
         name: event-reports
         path: |
           reports/
           screenshots/
-          all_event_details.json
           events.xlsx
