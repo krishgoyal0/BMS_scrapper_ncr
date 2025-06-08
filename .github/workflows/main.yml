@@ -2,7 +2,7 @@ name: BookMyShow Event Scraper
 
 on:
   schedule:
-    - cron: '0 9,20 * * *'  # 2:30 PM and 1:30 AM IST
+    - cron: '0 9,20 * * *'
   workflow_dispatch:
 
 jobs:
@@ -41,19 +41,12 @@ jobs:
 
     - name: Upload to Google Sheets
       env:
-        GOOGLE_CREDENTIALS_FILE: ${{ secrets.GOOGLE_SERVICE_ACCOUNT }}  # Maps to what Python expects
+        GOOGLE_CREDENTIALS: ${{ secrets.GOOGLE_SERVICE_ACCOUNT }}
       run: |
-        # Create both authentication methods
-        echo "$GOOGLE_CREDENTIALS_FILE" > service_account.json
-        
-        # Debug output
-        python -c "
-        import os, json
-        source = 'env var' if os.getenv('GOOGLE_CREDENTIALS_FILE') else 'file'
-        print(f'Using credentials from: {source}')
-        print(f'Service account: {json.load(open("service_account.json"))["client_email"]}')
-        "
-        
+        # Create service account JSON file from secret
+        echo "$GOOGLE_CREDENTIALS" > service_account.json
+        # Verify file was created correctly
+        echo "File size:" $(wc -c < service_account.json)
         python 05_upload_to_sheets.py
 
     - name: Commit changes to repository
