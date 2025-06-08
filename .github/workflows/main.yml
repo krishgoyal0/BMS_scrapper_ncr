@@ -51,14 +51,14 @@ jobs:
       run: python 05_upload_to_sheets.py
 
     - name: Upload Screenshots as Artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       if: always()
       with:
         name: event-screenshots
         path: screenshots/*.png
 
     - name: Upload Report as Artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       if: always()
       with:
         name: event-report
