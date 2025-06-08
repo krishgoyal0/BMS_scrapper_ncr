@@ -24,7 +24,7 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v5
       with:
-        python-version: '3.10'
+        python-version: '3.10' # Ensure this matches your local Python version if specific packages are compiled
 
     - name: Install dependencies
       run: |
@@ -32,6 +32,8 @@ jobs:
         pip install -r requirements.txt
         playwright install chromium
         playwright install-deps
+        # Install jq for JSON validation in the debug step
+        sudo apt-get update && sudo apt-get install -y jq
 
     # --- Scraping Pipeline ---
     - name: Run URL fetcher
@@ -49,17 +51,36 @@ jobs:
     # --- Google Sheets Upload ---
     - name: Create service_account.json from secret # This is the corrected step
       env:
-        GOOGLE_SERVICE_ACCOUNT_KEY: ${{ secrets.GOOGLE_SERVICE_ACCOUNT }} # Use the correct secret name and make it available as an env var
+        # **IMPORTANT:** This secret name MUST exactly match the name in your GitHub repo settings.
+        # It's 'GOOGLE_SERVICE_ACCOUNT' as per your provided workflow.
+        GOOGLE_SERVICE_ACCOUNT_KEY: ${{ secrets.GOOGLE_SERVICE_ACCOUNT }} 
       run: |
+        echo "--- Current Working Directory ---"
+        pwd
+        echo "--- Files in Current Directory BEFORE creation ---"
+        ls -la
+        
+        echo "--- Attempting to create service_account.json ---"
+        # THIS IS THE CRITICAL FIX: Ensure this line correctly echoes the environment variable content.
         echo "${{ env.GOOGLE_SERVICE_ACCOUNT_KEY }}" > service_account.json
-        # Optional: Add jq validation if you have jq installed on the runner and want stricter validation
-        # If jq is not installed by default or needed, remove this line.
-        # jq . service_account.json || { echo "Service account JSON is invalid!"; exit 1; }
+        
+        echo "--- Files in Current Directory AFTER creation ---"
+        ls -la
+        
+        # --- DEBUGGING LINES (UNCOMMENT ONLY IF YOU NEED TO INSPECT THE SECRET IN LOGS) ---
+        # echo "--- Content of service_account.json (first few lines) ---"
+        # head service_account.json
+        # echo "--- Full content of service_account.json (for deep inspection - REMOVE AFTER DEBUGGING) ---"
+        # cat service_account.json 
+        # echo "--- Validating service_account.json with jq ---"
+        # jq . service_account.json || { echo "ERROR: service_account.json is NOT valid JSON!"; exit 1; }
+        # echo "service_account.json is valid JSON."
+        # --- END DEBUGGING LINES ---
 
     - name: Upload to Google Sheets
       # No need for an env block here, as 05_upload_to_sheets.py reads from the created file
       run: python 05_upload_to_sheets.py
-      
+
     # --- Git Operations ---
     - name: Commit changes
       id: commit # Keep the ID for conditional push
@@ -67,8 +88,8 @@ jobs:
         git config --global user.name "GitHub Actions"
         git config --global user.email "actions@github.com"
         
-        # Add all relevant output files
-        git add data/ reports/ events.xlsx # IMPORTANT: Add events.xlsx if it's created/modified by 04_json_to_excel.py
+        # Add all relevant output files (assuming events.xlsx is generated/modified)
+        git add data/ reports/ events.xlsx 
         
         if git diff --cached --quiet; then
           echo "changes=false" >> $GITHUB_OUTPUT
@@ -82,10 +103,9 @@ jobs:
     - name: Push changes
       if: steps.commit.outputs.changes == 'true' # Only push if changes were committed
       run: |
-        # Use git pull --rebase to get latest changes and reapply yours,
-        # which is safer than just rebase followed by push,
-        # especially if other commits might land while the workflow runs.
-        git pull --rebase origin main # Assuming 'main' is your branch
+        # Pull with rebase to get latest changes and reapply yours,
+        # which is safer than just rebase followed by push.
+        git pull --rebase origin main # Assuming 'main' is your default branch
         git push
 
     # --- Artifacts ---
