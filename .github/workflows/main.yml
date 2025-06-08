@@ -2,20 +2,25 @@ name: BookMyShow Event Scraper
 
 on:
   schedule:
-    - cron: '0 9,20 * * *'  # Runs at 9 AM and 8 PM UTC
-  workflow_dispatch:
+    - cron: '0 9,20 * * *'  # Runs at 9 AM and 8 PM UTC (2:30 PM and 1:30 AM IST)
+  workflow_dispatch:  # Allows manual triggering
+
+permissions:
+  contents: write  # Required for pushing changes back to repo
 
 jobs:
   scrape-and-process:
     runs-on: ubuntu-latest
     
     steps:
-    # --- Setup ---
+    # --- Repository Setup ---
     - name: Checkout repository
       uses: actions/checkout@v4
       with:
-        fetch-depth: 0
+        fetch-depth: 0  # Required for git history operations
+        persist-credentials: true  # Maintains auth for push
 
+    # --- Python Environment ---
     - name: Set up Python
       uses: actions/setup-python@v5
       with:
@@ -41,33 +46,35 @@ jobs:
     - name: Convert to Excel
       run: python 04_json_to_excel.py
 
-    # --- Google Sheets Upload (Fixed) ---
+    # --- Google Sheets Upload ---
     - name: Upload to Google Sheets
       env:
         GOOGLE_CREDENTIALS: ${{ secrets.GOOGLE_SERVICE_ACCOUNT }}
       run: |
-        # Create and validate JSON file
+        # Create and validate service account JSON
         echo "$GOOGLE_CREDENTIALS" > service_account.json
-        echo "JSON validation:"
-        jq empty service_account.json || (echo "❌ Invalid JSON!"; exit 1)
-        echo "✅ Credentials verified"
-
-        # Run upload script
+        if ! jq empty service_account.json; then
+          echo " Invalid service account JSON!"
+          exit 1
+        fi
         python 05_upload_to_sheets.py
 
-    # --- Git Commit & Push (Fixed) ---
-    - name: Commit changes
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    # --- Git Operations ---
+    - name: Commit and push changes
       run: |
         git config --global user.name "GitHub Actions"
         git config --global user.email "actions@github.com"
         git add data/ reports/
-        git diff --quiet && git diff --staged --quiet || git commit -m "Auto-update: Event data [skip ci]"
-        git push origin HEAD:main
+        if git diff --quiet --cached; then
+          echo "No changes to commit"
+        else
+          git commit -m "Auto-update: Event data [skip ci]"
+          git pull --rebase
+          git push
+        fi
 
     # --- Artifacts ---
-    - name: Upload results
+    - name: Upload results as artifact
       uses: actions/upload-artifact@v4
       with:
         name: event-reports
