@@ -6,7 +6,7 @@ import os
 # --- Configuration ---
 excel_file_name = 'events.xlsx'
 # service_account_key_file = 'service_account.json'
-service_account_key_file = os.environ.get('GOOGLE_CREDENTIALS_FILE', 'service_account.json')
+service_account_key_file = os.environ.get('GOOGLE_CREDENTIALS', 'service_account.json')
 google_sheet_name = 'TodayReport_BMS'
 worksheet_name = 'Sheet1'
 timestamp_cell = 'A1'  # Cell where timestamp will be written
