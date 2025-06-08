@@ -2,8 +2,11 @@ name: BookMyShow Event Scraper
 
 on:
   schedule:
-    - cron: '0 9,20 * * *'  # Runs at 9 AM and 8 PM UTC
+    - cron: '0 9,20 * * *'
   workflow_dispatch:
+
+permissions:
+  contents: write # Needed for committing and pushing changes
 
 jobs:
   scrape-and-process:
@@ -15,18 +18,22 @@ jobs:
       uses: actions/checkout@v4
       with:
         fetch-depth: 0
+        persist-credentials: true # Good for pushing changes
 
+    # --- Environment ---
     - name: Set up Python
       uses: actions/setup-python@v5
       with:
-        python-version: '3.10'
+        python-version: '3.10' # Ensure this matches your local Python version if specific packages are compiled
 
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install playwright pytesseract pandas gspread openpyxl pillow jq
+        pip install -r requirements.txt
         playwright install chromium
         playwright install-deps
+        # Install jq for JSON validation in the debug step
+        sudo apt-get update && sudo apt-get install -y jq
 
     # --- Scraping Pipeline ---
     - name: Run URL fetcher
@@ -41,38 +48,55 @@ jobs:
     - name: Convert to Excel
       run: python 04_json_to_excel.py
 
-    # --- Google Sheets Upload (Fixed) ---
-    - name: Upload to Google Sheets
+
+    # --- Google Sheets Upload ---
+    # --- Google Sheets Upload ---
+    - name: Create service_account.json from secret
       env:
-        GOOGLE_CREDENTIALS: ${{ secrets.GOOGLE_SERVICE_ACCOUNT }}
+        GOOGLE_SERVICE_ACCOUNT_KEY: ${{ secrets.GOOGLE_SERVICE_ACCOUNT }}
       run: |
-        # Create and validate JSON file
-        echo "$GOOGLE_CREDENTIALS" > service_account.json
-        echo "JSON validation:"
-        jq empty service_account.json || (echo "❌ Invalid JSON!"; exit 1)
-        echo "✅ Credentials verified"
+        echo "$GOOGLE_SERVICE_ACCOUNT_KEY" | sed 's/\\n/\n/g' > service_account.json
+    
+    - name: Set GOOGLE_SERVICE_ACCOUNT_FILE environment variable
+      run: echo "GOOGLE_SERVICE_ACCOUNT_FILE=service_account.json" >> $GITHUB_ENV
+    
+    - name: Upload to Google Sheets
+      run: python 05_upload_to_sheets.py
 
-        # Run upload script
-        python 05_upload_to_sheets.py
 
-    # --- Git Commit & Push (Fixed) ---
+    # --- Git Operations ---
     - name: Commit changes
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      id: commit # Keep the ID for conditional push
       run: |
         git config --global user.name "GitHub Actions"
         git config --global user.email "actions@github.com"
-        git add data/ reports/
-        git diff --quiet && git diff --staged --quiet || git commit -m "Auto-update: Event data [skip ci]"
-        git push origin HEAD:main
+        
+        # Add all relevant output files (assuming events.xlsx is generated/modified)
+        git add data/ reports/ events.xlsx 
+        
+        if git diff --cached --quiet; then
+          echo "changes=false" >> $GITHUB_OUTPUT
+          echo "No changes to commit."
+        else
+          git commit -m "Auto-update: Event data [skip ci]"
+          echo "changes=true" >> $GITHUB_OUTPUT
+          echo "Changes committed."
+        fi
+
+    - name: Push changes
+      if: steps.commit.outputs.changes == 'true' # Only push if changes were committed
+      run: |
+        # Pull with rebase to get latest changes and reapply yours,
+        # which is safer than just rebase followed by push.
+        git pull --rebase origin main # Assuming 'main' is your default branch
+        git push
 
     # --- Artifacts ---
-    - name: Upload results
+    - name: Archive results
       uses: actions/upload-artifact@v4
       with:
         name: event-reports
         path: |
           reports/
           screenshots/
-          all_event_details.json
           events.xlsx
