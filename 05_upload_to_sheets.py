@@ -4,7 +4,8 @@ import os
 
 # --- Configuration ---
 excel_file_name = 'events.xlsx'
-service_account_key_file = 'service_account.json'
+# service_account_key_file = 'service_account.json'
+service_account_key_file = os.getenv("GOOGLE_SERVICE_ACCOUNT", "service_account.json")
 google_sheet_name = 'TodayReport_BMS'
 worksheet_name = 'Sheet1'
 
