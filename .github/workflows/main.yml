@@ -2,9 +2,8 @@ name: BookMyShow Event Scraper
 
 on:
   schedule:
-    # Runs at 9 AM and 8 PM UTC (2:30 PM and 1:30 AM IST)
     - cron: '0 9,20 * * *'
-  workflow_dispatch:  # Allows manual triggering
+  workflow_dispatch:
 
 jobs:
   scrape-and-process:
@@ -14,7 +13,7 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
       with:
-        fetch-depth: 0  # Needed to commit back to the repo
+        fetch-depth: 0
 
     - name: Set up Python
       uses: actions/setup-python@v5
@@ -46,8 +45,8 @@ jobs:
       run: |
         # Create service account JSON file from secret
         echo "$GOOGLE_CREDENTIALS" > service_account.json
-        # Verify the file was created
-        ls -la
+        # Verify file was created correctly
+        echo "File size:" $(wc -c < service_account.json)
         python 05_upload_to_sheets.py
 
     - name: Commit changes to repository
