@@ -54,12 +54,12 @@ jobs:
         echo "${{ env.GOOGLE_SERVICE_ACCOUNT_KEY }}" > service_account.json
         # Optional: Add jq validation if you have jq installed on the runner and want stricter validation
         # If jq is not installed by default or needed, remove this line.
-        # jq empty service_account.json || { echo "Service account JSON is invalid!"; exit 1; }
+        # jq . service_account.json || { echo "Service account JSON is invalid!"; exit 1; }
 
     - name: Upload to Google Sheets
       # No need for an env block here, as 05_upload_to_sheets.py reads from the created file
       run: python 05_upload_to_sheets.py
-
+      
     # --- Git Operations ---
     - name: Commit changes
       id: commit # Keep the ID for conditional push
