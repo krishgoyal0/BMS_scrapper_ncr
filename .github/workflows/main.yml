@@ -3,7 +3,7 @@ name: BookMyShow Event Pipeline
 on:
   schedule:
     - cron: '0 8 * * *'  # Runs daily at 8:00 AM UTC
-  workflow_dispatch:  # Allows manual triggering
+  workflow_dispatch:     # Allows manual triggering
 
 jobs:
   bms-event-pipeline:
@@ -47,9 +47,9 @@ jobs:
 
     - name: Upload to Google Sheets
       env:
-        BMS_GOOGLE_SERVICE_ACCOUNT: ${{ secrets.BMS_GOOGLE_SERVICE_ACCOUNT }}  # Updated secret name
+        GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}  # Original secret name
       run: |
-        echo "$BMS_GOOGLE_SERVICE_ACCOUNT" > service_account.json
+        echo "$GOOGLE_SERVICE_ACCOUNT_JSON" > service_account.json
         python 05_upload_to_sheets.py
 
     - name: Upload Screenshots as Artifact
