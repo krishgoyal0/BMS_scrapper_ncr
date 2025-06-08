@@ -2,8 +2,9 @@ name: BookMyShow Event Scraper
 
 on:
   schedule:
-    - cron: '0 9,20 * * *'  # 2:30 PM and 1:30 AM IST
-  workflow_dispatch:
+    # Runs at 9 AM and 8 PM UTC (2:30 PM and 1:30 AM IST)
+    - cron: '0 9,20 * * *'
+  workflow_dispatch:  # Allows manual triggering
 
 jobs:
   scrape-and-process:
@@ -13,7 +14,7 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
       with:
-        fetch-depth: 0
+        fetch-depth: 0  # Needed to commit back to the repo
 
     - name: Set up Python
       uses: actions/setup-python@v5
@@ -41,19 +42,12 @@ jobs:
 
     - name: Upload to Google Sheets
       env:
-        GOOGLE_CREDENTIALS_FILE: ${{ secrets.GOOGLE_SERVICE_ACCOUNT }}  # Maps to what Python expects
+        GOOGLE_CREDENTIALS: ${{ secrets.GOOGLE_SERVICE_ACCOUNT }}
       run: |
-        # Create both authentication methods
-        echo "$GOOGLE_CREDENTIALS_FILE" > service_account.json
-        
-        # Debug output
-        python -c "
-        import os, json
-        source = 'env var' if os.getenv('GOOGLE_CREDENTIALS_FILE') else 'file'
-        print(f'Using credentials from: {source}')
-        print(f'Service account: {json.load(open("service_account.json"))["client_email"]}')
-        "
-        
+        # Create service account JSON file from secret
+        echo "$GOOGLE_CREDENTIALS" > service_account.json
+        # Verify the file was created
+        ls -la
         python 05_upload_to_sheets.py
 
     - name: Commit changes to repository
