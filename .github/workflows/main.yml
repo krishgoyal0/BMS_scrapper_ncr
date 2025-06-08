@@ -49,37 +49,30 @@ jobs:
       run: python 04_json_to_excel.py
 
     # --- Google Sheets Upload ---
-    - name: Create service_account.json from secret # This is the corrected step
+        # --- Google Sheets Upload ---
+    - name: Create service_account.json from secret
       env:
-        # **IMPORTANT:** This secret name MUST exactly match the name in your GitHub repo settings.
-        # It's 'GOOGLE_SERVICE_ACCOUNT' as per your provided workflow.
-        GOOGLE_SERVICE_ACCOUNT_KEY: ${{ secrets.GOOGLE_SERVICE_ACCOUNT }} 
+        GOOGLE_SERVICE_ACCOUNT_KEY: ${{ secrets.GOOGLE_SERVICE_ACCOUNT }}
       run: |
-        echo "--- Current Working Directory ---"
-        pwd
-        echo "--- Files in Current Directory BEFORE creation ---"
-        ls -la
+        # Write the secret content to file
+        echo "$GOOGLE_SERVICE_ACCOUNT_KEY" > service_account.json
         
-        echo "--- Attempting to create service_account.json ---"
-        # THIS IS THE CRITICAL FIX: Ensure this line correctly echoes the environment variable content.
-        echo "${{ env.GOOGLE_SERVICE_ACCOUNT_KEY }}" > service_account.json
+        # Validate the JSON format
+        if ! python -c "import json; json.load(open('service_account.json'))"; then
+          echo "Error: Invalid JSON in service account file"
+          echo "File content:"
+          cat service_account.json
+          exit 1
+        fi
         
-        echo "--- Files in Current Directory AFTER creation ---"
-        ls -la
-        
-        # --- DEBUGGING LINES (UNCOMMENT ONLY IF YOU NEED TO INSPECT THE SECRET IN LOGS) ---
-        # echo "--- Content of service_account.json (first few lines) ---"
-        # head service_account.json
-        # echo "--- Full content of service_account.json (for deep inspection - REMOVE AFTER DEBUGGING) ---"
-        # cat service_account.json 
-        # echo "--- Validating service_account.json with jq ---"
-        # jq . service_account.json || { echo "ERROR: service_account.json is NOT valid JSON!"; exit 1; }
-        # echo "service_account.json is valid JSON."
-        # --- END DEBUGGING LINES ---
+        echo "Service account file created successfully:"
+        ls -la service_account.json
 
     - name: Upload to Google Sheets
-      # No need for an env block here, as 05_upload_to_sheets.py reads from the created file
       run: python 05_upload_to_sheets.py
+      env:
+        GOOGLE_CREDENTIALS_PATH: ./service_account.json
+
 
     # --- Git Operations ---
     - name: Commit changes
