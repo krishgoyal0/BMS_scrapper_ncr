@@ -50,21 +50,16 @@ jobs:
 
 
     # --- Google Sheets Upload ---
+    # --- Google Sheets Upload ---
     - name: Create service_account.json from secret
       env:
         GOOGLE_SERVICE_ACCOUNT_KEY: ${{ secrets.GOOGLE_SERVICE_ACCOUNT }}
       run: |
-        # Write the secret content to file with proper JSON formatting
-        echo "$GOOGLE_SERVICE_ACCOUNT_KEY" > service_account.json
-        # Validate JSON format
-        if ! python -c "import json; json.load(open('service_account.json'))"; then
-          echo "::error::Invalid JSON in service account file"
-          echo "First 50 chars (sanitized):"
-          head -c 50 service_account.json | sed 's/[a-zA-Z0-9]/X/g'
-          exit 1
-        fi
-        echo "Service account file created successfully"
-
+        echo "$GOOGLE_SERVICE_ACCOUNT_KEY" | sed 's/\\n/\n/g' > service_account.json
+    
+    - name: Set GOOGLE_SERVICE_ACCOUNT_FILE environment variable
+      run: echo "GOOGLE_SERVICE_ACCOUNT_FILE=service_account.json" >> $GITHUB_ENV
+    
     - name: Upload to Google Sheets
       run: python 05_upload_to_sheets.py
 
