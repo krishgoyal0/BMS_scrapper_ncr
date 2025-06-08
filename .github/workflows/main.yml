@@ -48,30 +48,25 @@ jobs:
     - name: Convert to Excel
       run: python 04_json_to_excel.py
 
+
     # --- Google Sheets Upload ---
-        # --- Google Sheets Upload ---
     - name: Create service_account.json from secret
       env:
         GOOGLE_SERVICE_ACCOUNT_KEY: ${{ secrets.GOOGLE_SERVICE_ACCOUNT }}
       run: |
-        # Write the secret content to file
+        # Write the secret content to file with proper JSON formatting
         echo "$GOOGLE_SERVICE_ACCOUNT_KEY" > service_account.json
-        
-        # Validate the JSON format
+        # Validate JSON format
         if ! python -c "import json; json.load(open('service_account.json'))"; then
-          echo "Error: Invalid JSON in service account file"
-          echo "File content:"
-          cat service_account.json
+          echo "::error::Invalid JSON in service account file"
+          echo "First 50 chars (sanitized):"
+          head -c 50 service_account.json | sed 's/[a-zA-Z0-9]/X/g'
           exit 1
         fi
-        
-        echo "Service account file created successfully:"
-        ls -la service_account.json
+        echo "Service account file created successfully"
 
     - name: Upload to Google Sheets
       run: python 05_upload_to_sheets.py
-      env:
-        GOOGLE_CREDENTIALS_PATH: ./service_account.json
 
 
     # --- Git Operations ---
