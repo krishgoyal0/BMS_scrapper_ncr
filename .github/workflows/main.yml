@@ -2,7 +2,7 @@ name: BookMyShow Event Pipeline
 
 on:
   schedule:
-    - cron: '0 8 * * *'  # Runs every day at 8:00 AM UTC
+    - cron: '0 8 * * *'  # Runs daily at 8:00 AM UTC
   workflow_dispatch:  # Allows manual triggering
 
 jobs:
@@ -23,7 +23,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
         sudo apt-get install tesseract-ocr
-        pip install pytesseract playwright
+        pip install pytesseract playwright pandas gspread
         playwright install chromium
         playwright install-deps
 
@@ -47,8 +47,10 @@ jobs:
 
     - name: Upload to Google Sheets
       env:
-        GOOGLE_SERVICE_ACCOUNT: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
-      run: python 05_upload_to_sheets.py
+        BMS_GOOGLE_SERVICE_ACCOUNT: ${{ secrets.BMS_GOOGLE_SERVICE_ACCOUNT }}  # Updated secret name
+      run: |
+        echo "$BMS_GOOGLE_SERVICE_ACCOUNT" > service_account.json
+        python 05_upload_to_sheets.py
 
     - name: Upload Screenshots as Artifact
       uses: actions/upload-artifact@v4
