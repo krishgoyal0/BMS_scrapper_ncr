@@ -2,42 +2,66 @@ name: BookMyShow Event Scraper
 
 on:
   schedule:
-    - cron: '0 8 * * *'  # 8:00 AM UTC (1:30 PM IST)
-  workflow_dispatch:
-
-permissions:
-  contents: write  # Essential for pushing commits
+    # Runs at 9 AM and 8 PM UTC (2:30 PM and 1:30 AM IST)
+    - cron: '0 9,20 * * *'
+  workflow_dispatch:  # Allows manual triggering
 
 jobs:
   scrape-and-process:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
     
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
       with:
-        fetch-depth: 0  # Needed for proper git history
-        token: ${{ secrets.GITHUB_TOKEN }}  # Automatic write access
-        
-    # [All your existing setup steps remain the same until after screenshot capture]
-    
-    - name: Commit report to repository
+        fetch-depth: 0  # Needed to commit back to the repo
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.10'
+
+    - name: Install dependencies
       run: |
-        # Configure git identity
+        python -m pip install --upgrade pip
+        pip install playwright pytesseract pandas gspread openpyxl pillow
+        playwright install chromium
+        playwright install-deps
+
+    - name: Run URL fetcher
+      run: python 01_url_fetcher.py
+
+    - name: Run screenshot capture
+      run: python 02_url_to_ss.py
+
+    - name: Run OCR processing
+      run: python 03_ss_to_json.py
+
+    - name: Convert to Excel
+      run: python 04_json_to_excel.py
+
+    - name: Upload to Google Sheets
+      env:
+        GOOGLE_SERVICE_ACCOUNT: ${{ secrets.GOOGLE_SERVICE_ACCOUNT }}
+      run: |
+        # Create service account JSON file from secret
+        echo "$GOOGLE_SERVICE_ACCOUNT" > service_account.json
+        python 05_upload_to_sheets.py
+
+    - name: Commit changes to repository
+      run: |
         git config --global user.name "GitHub Actions"
         git config --global user.email "actions@github.com"
-        
-        # Add only the report file (not other changes)
-        git add reports/event_report_$(date +'%Y-%m-%d').txt
-        
-        # Commit only if the report file changed
-        if git diff-index --quiet HEAD --; then
-          echo "No changes in today's report"
-        else
-          git commit -m "Add event report for $(date +'%Y-%m-%d')"
-          git push origin HEAD:main
-          echo "Successfully committed report"
-        fi
-        
-    # [Rest of your workflow steps remain unchanged]
+        git add data/ reports/
+        git diff --quiet && git diff --staged --quiet || git commit -m "Update scraped event data [skip ci]"
+        git push
+
+    - name: Upload results as artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: event-reports
+        path: |
+          reports/
+          screenshots/
+          all_event_details.json
+          events.xlsx
