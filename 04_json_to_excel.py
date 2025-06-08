@@ -16,7 +16,11 @@ def json_to_excel(json_file_path, excel_file_path):
     df.insert(0, 'event_id', [f"#{str(i+1).zfill(4)}" for i in range(len(df))])
     
     # Clean up data (optional)
-    df['event_time'] = df['event_time'].fillna('Not Specified')
+    # Check if 'event_time' column exists before cleaning
+    if 'event_time' in df.columns:
+        df['event_time'] = df['event_time'].fillna('Not Specified')
+    else:
+        print("Warning: 'event_time' column not found in JSON data. Skipping cleanup for 'event_time'.")
     
     # Save to Excel
     df.to_excel(excel_file_path, index=False, engine='openpyxl')
