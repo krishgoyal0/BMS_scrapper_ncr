@@ -1,15 +1,67 @@
 [
     {
-        "event_name": "01 Anirban Dasgupta Live",
-        "date_range": "Sun 8 Jun 2025",
+        "event_name": "01 Kenny Sebastian - A Crowd Work Show",
+        "date_range": "Thu 12 Jun 2025",
         "event_end_date": "-",
-        "event_time": "8:30 PM",
-        "duration": "1 hour 30 minutes",
-        "age_limit": "18yrs+",
-        "language": "English, Hindi",
+        "event_time": "-",
+        "duration": "1 hour 15 minutes",
+        "age_limit": "16yrs+",
+        "language": "English",
         "venue": "The Laugh Store: DLF Cyberhub",
-        "price": "₹ 599",
+        "price": "₹ 999 onwards",
         "seats_status": "Fast Filling",
-        "source_image": "01_Anirban Dasgupta Live.png"
+        "source_image": "01_Kenny Sebastian - A Crowd Work Show.png"
+    },
+    {
+        "event_name": "02 Swiftchella - A Taylor Swift-Themed Fan Party",
+        "date_range": "Sat 14 Jun 2025",
+        "event_end_date": "Sat 12 Jul 2025",
+        "event_time": "3:00 PM",
+        "duration": "3 Hours",
+        "age_limit": "-",
+        "language": "English",
+        "venue": "Veranda: Khar",
+        "price": "₹ 499 onwards",
+        "seats_status": "Fast Filling",
+        "source_image": "02_Swiftchella - A Taylor Swift-Themed Fan Party.png"
+    },
+    {
+        "event_name": "03 Comedy Nights @Comedy County",
+        "date_range": "Mon 9 Jun 2025",
+        "event_end_date": "Thu 3 Jul 2025",
+        "event_time": "9:00 PM",
+        "duration": "1 hour 15 minutes",
+        "age_limit": "16yrs+",
+        "language": "Hindi",
+        "venue": "Comedy County: Noida",
+        "price": "₹ 99 onwards",
+        "seats_status": "Available",
+        "source_image": "03_Comedy Nights @Comedy County.png"
+    },
+    {
+        "event_name": "04 Paint with Puppies by Barket",
+        "date_range": "Sun 15 Jun 2025",
+        "event_end_date": "-",
+        "event_time": "4:00 PM",
+        "duration": "2 Hours",
+        "age_limit": "-",
+        "language": "English, Hindi",
+        "venue": "BeeYoung Brewgarden: Delhi",
+        "price": "-",
+        "seats_status": "Available",
+        "source_image": "04_Paint with Puppies by Barket.png"
+    },
+    {
+        "event_name": "05 Best of Stand-up - Stand-up Comedy Show",
+        "date_range": "Wed 11 Jun 2025",
+        "event_end_date": "Sun 15 Jun 2025",
+        "event_time": "8:00 PM",
+        "duration": "1 hour 15 minutes",
+        "age_limit": "16yrs+",
+        "language": "3 Hindi",
+        "venue": "Laughter Nation Comedy Club, 7",
+        "price": "₹ 99",
+        "seats_status": "-",
+        "source_image": "05_Best of Stand-up - Stand-up Comedy Show.png"
     }
 ]
