@@ -90,21 +90,28 @@ def extract_event_details(image_path):
                 continue
 
             # Price extraction
-            clean_line = re.sub(r'(?<!\d)2\s*([.,]?\d{2,6})', r'\1', line)
-
+            # Price extraction - improved version
             price_match = re.search(
-                r'(?:₹|Rs\.?|INR)?\s*[\.:]?\s*(\d{2,6})(?:\.\d{1,2})?\s*(onwards|only)?',
-                clean_line
+                r'(?:₹|Rs\.?|INR)?\s*[\.:]?\s*(\d{1,3}(?:,\d{3})*(?:\.\d{2})?)\s*(onwards|only|and above)?\b',
+                line,
+                re.IGNORECASE
             )
 
             if price_match and not details['price']:
-                value = price_match.group(1)
+                value = price_match.group(1).replace(',', '')  # Remove commas for numeric conversion
                 suffix = price_match.group(2) or ''
-
-                if value.isdigit() and (int(value) >= 50 or suffix):
-                    details['price'] = f"{value} {suffix}".strip()
+                
+                # Additional check to avoid catching random numbers
+                if value.replace('.', '').isdigit():
+                    numeric_value = float(value) if '.' in value else int(value)
+                    if numeric_value >= 50:  # Minimum reasonable price threshold
+                        # Format with currency symbol and proper spacing
+                        formatted_price = f"₹{numeric_value:,}"
+                        if suffix:
+                            formatted_price += f" {suffix.capitalize()}"
+                        details['price'] = formatted_price
                 continue
-
+            
         # Seats Status
         for line in lines:
             line_lower = line.lower()
