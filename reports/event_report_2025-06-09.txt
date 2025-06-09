@@ -1,0 +1,45 @@
+
+=== Event Comparison Results ===
+Old file: 32 events
+New file: 14 events
+Comparison time: 2025-06-09 08:37:19
+
+Newly added events (0):
+
+Removed events (18):
+- A NIGHT OF LAUGHTER FT GAURAV GUPTA
+  URL:  https://in.bookmyshow.com/events/a-night-of-laughter-ft-gaurav-gupta/ET00400535
+- Just Joking - A Stand Up Comedy Line Up
+  URL:  https://in.bookmyshow.com/events/just-joking-a-stand-up-comedy-line-up/ET00364084
+- SONU NIGAM LIVE IN CONCERT GURUGRAM
+  URL:  https://in.bookmyshow.com/events/sonu-nigam-live-in-concert-gurugram/ET00439782
+- KidZania Delhi
+  URL:  https://in.bookmyshow.com/events/kidzania-delhi-tickets/ET00042240
+- Ladies Man by Vivek Samtani
+  URL:  https://in.bookmyshow.com/events/ladies-man-by-vivek-samtani/ET00448772
+- Kids Summer Camp
+  URL:  https://in.bookmyshow.com/events/kids-summer-camp/ET00443945
+- Ravi Gupta Live : Birch Noida
+  URL:  https://in.bookmyshow.com/events/ravi-gupta-live-birch-noida/ET00446633
+- Dhyan Sangeet Meditation Program: New Delhi
+  URL:  https://in.bookmyshow.com/events/dhyan-sangeet-meditation-program-new-delhi/ET00445995
+- Single's Meetup
+  URL:  https://in.bookmyshow.com/events/single-s-meetup/ET00394655
+- Blind Date
+  URL:  https://in.bookmyshow.com/events/blindfolded-conversations/ET00361919
+- Comedy Show Noida Sector 18
+  URL:  https://in.bookmyshow.com/events/comedy-show-noida-sector-18/ET00448749
+- ALLOW ME - A Standup Comedy Show by Rahul Dua
+  URL:  https://in.bookmyshow.com/events/rahul-dua-live-a-standup-comedy-show/ET00404978
+- Adult Standup Comedy Show
+  URL:  https://in.bookmyshow.com/events/adult-standup-comedy-show/ET00440230
+- Cap Mania Tour ft Himesh Reshammiya
+  URL:  https://in.bookmyshow.com/events/cap-mania-tour-ft-himesh-reshammiya/ET00441454
+- Jazbaa Ft Rekha Bhardwaj Live in Concert
+  URL:  https://in.bookmyshow.com/events/jazbaa-ft-rekha-bharadwaj-live-in-concert/ET00415475
+- PS - I Love You By Pranav Sharma
+  URL:  https://in.bookmyshow.com/events/taaza-phool-ft-pranav-sharma/ET00408533
+- Nayab Midha Live
+  URL:  https://in.bookmyshow.com/events/the-nayab-show-ft-nayab-midha/ET00371345
+- Tara Sitara Night ft. Gurdas Maan Live at Khubani
+  URL:  https://in.bookmyshow.com/events/tara-sitara-night-ft-gurdas-maan-live-at-khubani/ET00447668
