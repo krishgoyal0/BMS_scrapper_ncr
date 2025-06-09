@@ -1,32 +1,6 @@
 [
     {
-        "event_name": "01 Kenny Sebastian - A Crowd Work Show",
-        "date_range": "Thu 12 Jun 2025",
-        "event_end_date": "-",
-        "event_time": "-",
-        "duration": "1 hour 15 minutes",
-        "age_limit": "16yrs+",
-        "language": "English",
-        "venue": "The Laugh Store: DLF Cyberhub",
-        "price": "₹999 Onwards",
-        "seats_status": "Fast Filling",
-        "source_image": "01_Kenny Sebastian - A Crowd Work Show.png"
-    },
-    {
-        "event_name": "02 Swiftchella - A Taylor Swift-Themed Fan Party",
-        "date_range": "Sat 14 Jun 2025",
-        "event_end_date": "Sat 12 Jul 2025",
-        "event_time": "3:00 PM",
-        "duration": "3 Hours",
-        "age_limit": "-",
-        "language": "English",
-        "venue": "Veranda: Khar",
-        "price": "₹499 Onwards",
-        "seats_status": "Fast Filling",
-        "source_image": "02_Swiftchella - A Taylor Swift-Themed Fan Party.png"
-    },
-    {
-        "event_name": "03 Comedy Nights @Comedy County",
+        "event_name": "01 Comedy Nights @Comedy County",
         "date_range": "Mon 9 Jun 2025",
         "event_end_date": "Thu 3 Jul 2025",
         "event_time": "9:00 PM",
@@ -35,11 +9,11 @@
         "language": "Hindi",
         "venue": "Comedy County: Noida",
         "price": "₹299 Onwards",
-        "seats_status": "Available",
-        "source_image": "03_Comedy Nights @Comedy County.png"
+        "seats_status": "Fast Filling",
+        "source_image": "01_Comedy Nights @Comedy County.png"
     },
     {
-        "event_name": "04 Paint with Puppies by Barket",
+        "event_name": "02 Paint with Puppies by Barket",
         "date_range": "Sun 15 Jun 2025",
         "event_end_date": "-",
         "event_time": "4:00 PM",
@@ -49,10 +23,23 @@
         "venue": "BeeYoung Brewgarden: Delhi",
         "price": "-",
         "seats_status": "Available",
-        "source_image": "04_Paint with Puppies by Barket.png"
+        "source_image": "02_Paint with Puppies by Barket.png"
     },
     {
-        "event_name": "05 Best of Stand-up - Stand-up Comedy Show",
+        "event_name": "03 Pottery Workshop",
+        "date_range": "Sun 15 Jun 2025",
+        "event_end_date": "Sun 29 Jun 2025",
+        "event_time": "3:00PM",
+        "duration": "2 Hours",
+        "age_limit": "-",
+        "language": "-",
+        "venue": "-",
+        "price": "₹599 Onwards",
+        "seats_status": "Available",
+        "source_image": "03_Pottery Workshop.png"
+    },
+    {
+        "event_name": "04 Best of Stand-up - Stand-up Comedy Show",
         "date_range": "Wed 11 Jun 2025",
         "event_end_date": "Sun 15 Jun 2025",
         "event_time": "8:00 PM",
@@ -62,6 +49,32 @@
         "venue": "Laughter Nation Comedy Club, 7",
         "price": "₹299",
         "seats_status": "-",
-        "source_image": "05_Best of Stand-up - Stand-up Comedy Show.png"
+        "source_image": "04_Best of Stand-up - Stand-up Comedy Show.png"
+    },
+    {
+        "event_name": "05 Kenny Sebastian - A Crowd Work Show",
+        "date_range": "Thu 12 Jun 2025",
+        "event_end_date": "-",
+        "event_time": "-",
+        "duration": "1 hour 15 minutes",
+        "age_limit": "16yrs+",
+        "language": "English",
+        "venue": "The Laugh Store: DLF Cyberhub",
+        "price": "₹999 Onwards",
+        "seats_status": "Fast Filling",
+        "source_image": "05_Kenny Sebastian - A Crowd Work Show.png"
+    },
+    {
+        "event_name": "06 Swiftchella - A Taylor Swift-Themed Fan Party",
+        "date_range": "Sat 14 Jun 2025",
+        "event_end_date": "Sat 12 Jul 2025",
+        "event_time": "3:00 PM",
+        "duration": "3 Hours",
+        "age_limit": "-",
+        "language": "English",
+        "venue": "Veranda: Khar",
+        "price": "₹499 Onwards",
+        "seats_status": "Fast Filling",
+        "source_image": "06_Swiftchella - A Taylor Swift-Themed Fan Party.png"
     }
 ]

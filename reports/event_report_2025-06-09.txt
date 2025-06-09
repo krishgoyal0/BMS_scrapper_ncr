@@ -2,55 +2,64 @@
 === Event Comparison Results ===
 Old file: 32 events
 New file: 32 events
-Comparison time: 2025-06-09 14:16:48
+Comparison time: 2025-06-09 19:35:51
 
-Newly added events (5):
-- Kenny Sebastian - A Crowd Work Show
-  URL:  https://in.bookmyshow.com/events/kenny-sebastian-a-crowd-work-show/ET00448339
-- Swiftchella - A Taylor Swift-Themed Fan Party
-  URL:  https://in.bookmyshow.com/events/swiftchella-a-taylor-swift-themed-fan-party/ET00441036
+Newly added events (6):
 - Comedy Nights @Comedy County
   URL:  https://in.bookmyshow.com/events/comedy-nights-comedy-county/ET00446925
 - Paint with Puppies by Barket
   URL:  https://in.bookmyshow.com/events/valentine-s-special-paint-with-puppies-kittens/ET00432354
+- Pottery Workshop
+  URL:  https://in.bookmyshow.com/events/pottery-workshop/ET00443207
 - Best of Stand-up - Stand-up Comedy Show
   URL:  https://in.bookmyshow.com/events/best-of-standup-inder-shreya-kd/ET00358274
+- Kenny Sebastian - A Crowd Work Show
+  URL:  https://in.bookmyshow.com/events/kenny-sebastian-a-crowd-work-show/ET00448339
+- Swiftchella - A Taylor Swift-Themed Fan Party
+  URL:  https://in.bookmyshow.com/events/swiftchella-a-taylor-swift-themed-fan-party/ET00441036
 
-Removed events (5):
-- Single's Meetup
-  URL:  https://in.bookmyshow.com/events/single-s-meetup/ET00394655
-- PS - I Love You By Pranav Sharma
-  URL:  https://in.bookmyshow.com/events/taaza-phool-ft-pranav-sharma/ET00408533
-- Cap Mania Tour ft Himesh Reshammiya
-  URL:  https://in.bookmyshow.com/events/cap-mania-tour-ft-himesh-reshammiya/ET00441454
+Removed events (6):
+- Ladies Man by Vivek Samtani
+  URL:  https://in.bookmyshow.com/events/ladies-man-by-vivek-samtani/ET00448772
 - Tara Sitara Night ft. Gurdas Maan Live at Khubani
   URL:  https://in.bookmyshow.com/events/tara-sitara-night-ft-gurdas-maan-live-at-khubani/ET00447668
+- Single's Meetup
+  URL:  https://in.bookmyshow.com/events/single-s-meetup/ET00394655
+- Cap Mania Tour ft Himesh Reshammiya
+  URL:  https://in.bookmyshow.com/events/cap-mania-tour-ft-himesh-reshammiya/ET00441454
+- PS - I Love You By Pranav Sharma
+  URL:  https://in.bookmyshow.com/events/taaza-phool-ft-pranav-sharma/ET00408533
 - Just Joking - A Stand Up Comedy Line Up
   URL:  https://in.bookmyshow.com/events/just-joking-a-stand-up-comedy-line-up/ET00364084
 
 === New Events Summary ===
 
-1. Kenny Sebastian - A Crowd Work Show
-   Venue: N/A
-   Date: N/A
-   URL:  https://in.bookmyshow.com/events/kenny-sebastian-a-crowd-work-show/ET00448339
-
-2. Swiftchella - A Taylor Swift-Themed Fan Party
-   Venue: N/A
-   Date: N/A
-   URL:  https://in.bookmyshow.com/events/swiftchella-a-taylor-swift-themed-fan-party/ET00441036
-
-3. Comedy Nights @Comedy County
+1. Comedy Nights @Comedy County
    Venue: N/A
    Date: N/A
    URL:  https://in.bookmyshow.com/events/comedy-nights-comedy-county/ET00446925
 
-4. Paint with Puppies by Barket
+2. Paint with Puppies by Barket
    Venue: N/A
    Date: N/A
    URL:  https://in.bookmyshow.com/events/valentine-s-special-paint-with-puppies-kittens/ET00432354
 
-5. Best of Stand-up - Stand-up Comedy Show
+3. Pottery Workshop
+   Venue: N/A
+   Date: N/A
+   URL:  https://in.bookmyshow.com/events/pottery-workshop/ET00443207
+
+4. Best of Stand-up - Stand-up Comedy Show
    Venue: N/A
    Date: N/A
    URL:  https://in.bookmyshow.com/events/best-of-standup-inder-shreya-kd/ET00358274
+
+5. Kenny Sebastian - A Crowd Work Show
+   Venue: N/A
+   Date: N/A
+   URL:  https://in.bookmyshow.com/events/kenny-sebastian-a-crowd-work-show/ET00448339
+
+6. Swiftchella - A Taylor Swift-Themed Fan Party
+   Venue: N/A
+   Date: N/A
+   URL:  https://in.bookmyshow.com/events/swiftchella-a-taylor-swift-themed-fan-party/ET00441036
