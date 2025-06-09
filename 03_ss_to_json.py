@@ -92,7 +92,7 @@ def extract_event_details(image_path):
             # Price extraction
             # Price extraction - improved version
             price_match = re.search(
-                r'(?:₹|Rs\.?|INR)?\s*[\.:]?\s*(\d{1,3}(?:,\d{3})*(?:\.\d{2})?)\s*(onwards|only|and above)?\b',
+                r'(?:¥|₹|Rs\.?|INR)?\s*[\.:]?\s*(\d{1,3}(?:,\d{3})*(?:\.\d{2})?)\s*(onwards|only|and above)?\b',
                 line,
                 re.IGNORECASE
             )
