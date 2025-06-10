@@ -1,0 +1,92 @@
+
+=== Event Comparison Results ===
+Old file: 32 events
+New file: 32 events
+Comparison time: 2025-06-10 08:36:16
+
+Newly added events (9):
+- Kaviraj Singh LIVE!!!
+  URL:  https://in.bookmyshow.com/events/kaviraj-singh-live/ET00445360
+- Love, Death & Ketchup by Varun Grover
+  URL:  https://in.bookmyshow.com/events/love-death-ketchup-by-varun-grover/ET00448990
+- Meet the Dinosaurs at North India Mall
+  URL:  https://in.bookmyshow.com/events/meet-the-dinosaurs-at-north-india-mall/ET00443230
+- Just Joking - A Stand Up Comedy Line Up
+  URL:  https://in.bookmyshow.com/events/just-joking-a-stand-up-comedy-line-up/ET00364084
+- Blunt by Onkar
+  URL:  https://in.bookmyshow.com/events/blunt-by-onkar/ET00447213
+- FUNKY ISLAND - JASOLA
+  URL:  https://in.bookmyshow.com/events/funky-island-jasola/ET00441325
+- PS - I Love You By Pranav Sharma
+  URL:  https://in.bookmyshow.com/events/taaza-phool-ft-pranav-sharma/ET00408533
+- Mauka Ya Dhoka Ft. Inder Sahani
+  URL:  https://in.bookmyshow.com/events/mauka-ya-dhoka-ft-inder-sahani/ET00434325
+- Pratyush Chaubey Live
+  URL:  https://in.bookmyshow.com/events/papa-under-training-by-pratyush-chaubey/ET00397558
+
+Removed events (9):
+- ALLOW ME - A Standup Comedy Show by Rahul Dua
+  URL:  https://in.bookmyshow.com/events/rahul-dua-live-a-standup-comedy-show/ET00404978
+- Paint with Puppies by Barket
+  URL:  https://in.bookmyshow.com/events/valentine-s-special-paint-with-puppies-kittens/ET00432354
+- Kids Summer Camp
+  URL:  https://in.bookmyshow.com/events/kids-summer-camp/ET00443945
+- Best of Stand-up - Stand-up Comedy Show
+  URL:  https://in.bookmyshow.com/events/best-of-standup-inder-shreya-kd/ET00358274
+- Dhyan Sangeet Meditation Program: New Delhi
+  URL:  https://in.bookmyshow.com/events/dhyan-sangeet-meditation-program-new-delhi/ET00445995
+- Comedy Show Noida Sector 18
+  URL:  https://in.bookmyshow.com/events/comedy-show-noida-sector-18/ET00448749
+- Pottery Workshop
+  URL:  https://in.bookmyshow.com/events/pottery-workshop/ET00443207
+- Swiftchella - A Taylor Swift-Themed Fan Party
+  URL:  https://in.bookmyshow.com/events/swiftchella-a-taylor-swift-themed-fan-party/ET00441036
+- Adult Standup Comedy Show
+  URL:  https://in.bookmyshow.com/events/adult-standup-comedy-show/ET00440230
+
+=== New Events Summary ===
+
+1. Kaviraj Singh LIVE!!!
+   Venue: N/A
+   Date: N/A
+   URL:  https://in.bookmyshow.com/events/kaviraj-singh-live/ET00445360
+
+2. Love, Death & Ketchup by Varun Grover
+   Venue: N/A
+   Date: N/A
+   URL:  https://in.bookmyshow.com/events/love-death-ketchup-by-varun-grover/ET00448990
+
+3. Meet the Dinosaurs at North India Mall
+   Venue: N/A
+   Date: N/A
+   URL:  https://in.bookmyshow.com/events/meet-the-dinosaurs-at-north-india-mall/ET00443230
+
+4. Just Joking - A Stand Up Comedy Line Up
+   Venue: N/A
+   Date: N/A
+   URL:  https://in.bookmyshow.com/events/just-joking-a-stand-up-comedy-line-up/ET00364084
+
+5. Blunt by Onkar
+   Venue: N/A
+   Date: N/A
+   URL:  https://in.bookmyshow.com/events/blunt-by-onkar/ET00447213
+
+6. FUNKY ISLAND - JASOLA
+   Venue: N/A
+   Date: N/A
+   URL:  https://in.bookmyshow.com/events/funky-island-jasola/ET00441325
+
+7. PS - I Love You By Pranav Sharma
+   Venue: N/A
+   Date: N/A
+   URL:  https://in.bookmyshow.com/events/taaza-phool-ft-pranav-sharma/ET00408533
+
+8. Mauka Ya Dhoka Ft. Inder Sahani
+   Venue: N/A
+   Date: N/A
+   URL:  https://in.bookmyshow.com/events/mauka-ya-dhoka-ft-inder-sahani/ET00434325
+
+9. Pratyush Chaubey Live
+   Venue: N/A
+   Date: N/A
+   URL:  https://in.bookmyshow.com/events/papa-under-training-by-pratyush-chaubey/ET00397558
