@@ -1,0 +1,83 @@
+
+=== Event Comparison Results ===
+Old file: 32 events
+New file: 32 events
+Comparison time: 2025-06-11 08:36:43
+
+Newly added events (8):
+- Vipul Goyal-Unleashed
+  URL:  https://in.bookmyshow.com/events/vipul-goyal-live/ET00346737
+- Swiftchella - A Taylor Swift-Themed Fan Party
+  URL:  https://in.bookmyshow.com/events/swiftchella-a-taylor-swift-themed-fan-party/ET00441036
+- Waqt Ki Baatein Tour by Dream Note
+  URL:  https://in.bookmyshow.com/events/waqt-ki-baatein-tour-by-dream-note/ET00449289
+- Comedy Show Noida Sector 18
+  URL:  https://in.bookmyshow.com/events/comedy-show-noida-sector-18/ET00448749
+- Adult Standup Comedy Show
+  URL:  https://in.bookmyshow.com/events/adult-standup-comedy-show/ET00440230
+- Alien World at Airia Mall
+  URL:  https://in.bookmyshow.com/events/alien-world-at-airia-mall/ET00445888
+- Best of Stand-up - Stand-up Comedy Show
+  URL:  https://in.bookmyshow.com/events/best-of-standup-inder-shreya-kd/ET00358274
+- So Mini Things with Shraddha Jain- One Last Time
+  URL:  https://in.bookmyshow.com/events/so-mini-things-with-shraddha-jain-one-last-time/ET00445356
+
+Removed events (8):
+- Meet the Dinosaurs at North India Mall
+  URL:  https://in.bookmyshow.com/events/meet-the-dinosaurs-at-north-india-mall/ET00443230
+- FUNKY ISLAND - JASOLA
+  URL:  https://in.bookmyshow.com/events/funky-island-jasola/ET00441325
+- Jazbaa Ft Rekha Bhardwaj Live in Concert
+  URL:  https://in.bookmyshow.com/events/jazbaa-ft-rekha-bharadwaj-live-in-concert/ET00415475
+- Just Joking - A Stand Up Comedy Line Up
+  URL:  https://in.bookmyshow.com/events/just-joking-a-stand-up-comedy-line-up/ET00364084
+- Kaviraj Singh LIVE!!!
+  URL:  https://in.bookmyshow.com/events/kaviraj-singh-live/ET00445360
+- Mauka Ya Dhoka Ft. Inder Sahani
+  URL:  https://in.bookmyshow.com/events/mauka-ya-dhoka-ft-inder-sahani/ET00434325
+- Kal ki Chinta Nahi Karta ft. Ravi Gupta
+  URL:  https://in.bookmyshow.com/events/kal-ki-chinta-nahi-karta-ft-ravi-gupta/ET00329412
+- Blunt by Onkar
+  URL:  https://in.bookmyshow.com/events/blunt-by-onkar/ET00447213
+
+=== New Events Summary ===
+
+1. Vipul Goyal-Unleashed
+   Venue: N/A
+   Date: N/A
+   URL:  https://in.bookmyshow.com/events/vipul-goyal-live/ET00346737
+
+2. Swiftchella - A Taylor Swift-Themed Fan Party
+   Venue: N/A
+   Date: N/A
+   URL:  https://in.bookmyshow.com/events/swiftchella-a-taylor-swift-themed-fan-party/ET00441036
+
+3. Waqt Ki Baatein Tour by Dream Note
+   Venue: N/A
+   Date: N/A
+   URL:  https://in.bookmyshow.com/events/waqt-ki-baatein-tour-by-dream-note/ET00449289
+
+4. Comedy Show Noida Sector 18
+   Venue: N/A
+   Date: N/A
+   URL:  https://in.bookmyshow.com/events/comedy-show-noida-sector-18/ET00448749
+
+5. Adult Standup Comedy Show
+   Venue: N/A
+   Date: N/A
+   URL:  https://in.bookmyshow.com/events/adult-standup-comedy-show/ET00440230
+
+6. Alien World at Airia Mall
+   Venue: N/A
+   Date: N/A
+   URL:  https://in.bookmyshow.com/events/alien-world-at-airia-mall/ET00445888
+
+7. Best of Stand-up - Stand-up Comedy Show
+   Venue: N/A
+   Date: N/A
+   URL:  https://in.bookmyshow.com/events/best-of-standup-inder-shreya-kd/ET00358274
+
+8. So Mini Things with Shraddha Jain- One Last Time
+   Venue: N/A
+   Date: N/A
+   URL:  https://in.bookmyshow.com/events/so-mini-things-with-shraddha-jain-one-last-time/ET00445356
