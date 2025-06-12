@@ -1,0 +1,45 @@
+
+=== Event Comparison Results ===
+Old file: 32 events
+New file: 14 events
+Comparison time: 2025-06-12 08:35:18
+
+Newly added events (0):
+
+Removed events (18):
+- Alien World at Airia Mall
+  URL:  https://in.bookmyshow.com/events/alien-world-at-airia-mall/ET00445888
+- Waqt Ki Baatein Tour by Dream Note
+  URL:  https://in.bookmyshow.com/events/waqt-ki-baatein-tour-by-dream-note/ET00449289
+- Best of Stand-up - Stand-up Comedy Show
+  URL:  https://in.bookmyshow.com/events/best-of-standup-inder-shreya-kd/ET00358274
+- Telling Lies -A Standup Solo by Aashish Solanki
+  URL:  https://in.bookmyshow.com/events/aashish-solanki-live/ET00447106
+- Swiftchella - A Taylor Swift-Themed Fan Party
+  URL:  https://in.bookmyshow.com/events/swiftchella-a-taylor-swift-themed-fan-party/ET00441036
+- KidZania Delhi
+  URL:  https://in.bookmyshow.com/events/kidzania-delhi-tickets/ET00042240
+- Ravi Gupta Live : Birch Noida
+  URL:  https://in.bookmyshow.com/events/ravi-gupta-live-birch-noida/ET00446633
+- Pratyush Chaubey Live
+  URL:  https://in.bookmyshow.com/events/papa-under-training-by-pratyush-chaubey/ET00397558
+- Nayab Midha Live
+  URL:  https://in.bookmyshow.com/events/the-nayab-show-ft-nayab-midha/ET00371345
+- Blind Date
+  URL:  https://in.bookmyshow.com/events/blindfolded-conversations/ET00361919
+- Comedy Nights @Comedy County
+  URL:  https://in.bookmyshow.com/events/comedy-nights-comedy-county/ET00446925
+- A NIGHT OF LAUGHTER FT GAURAV GUPTA
+  URL:  https://in.bookmyshow.com/events/a-night-of-laughter-ft-gaurav-gupta/ET00400535
+- Adult Standup Comedy Show
+  URL:  https://in.bookmyshow.com/events/adult-standup-comedy-show/ET00440230
+- SONU NIGAM LIVE IN CONCERT GURUGRAM
+  URL:  https://in.bookmyshow.com/events/sonu-nigam-live-in-concert-gurugram/ET00439782
+- Love, Death & Ketchup by Varun Grover
+  URL:  https://in.bookmyshow.com/events/love-death-ketchup-by-varun-grover/ET00448990
+- PS - I Love You By Pranav Sharma
+  URL:  https://in.bookmyshow.com/events/taaza-phool-ft-pranav-sharma/ET00408533
+- Comedy Show Noida Sector 18
+  URL:  https://in.bookmyshow.com/events/comedy-show-noida-sector-18/ET00448749
+- So Mini Things with Shraddha Jain- One Last Time
+  URL:  https://in.bookmyshow.com/events/so-mini-things-with-shraddha-jain-one-last-time/ET00445356
