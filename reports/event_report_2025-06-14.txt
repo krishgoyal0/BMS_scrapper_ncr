@@ -1,0 +1,65 @@
+
+=== Event Comparison Results ===
+Old file: 32 events
+New file: 32 events
+Comparison time: 2025-06-14 08:32:40
+
+Newly added events (6):
+- Adult Jokes Only
+  URL:  https://in.bookmyshow.com/events/adult-jokes/ET00449702
+- Kal Ki Chinta Nahi Karta ft.Ravi Gupta
+  URL:  https://in.bookmyshow.com/events/kal-ki-chinta-nahi-karta-ft-ravi-gupta/ET00336178
+- Shamik Chakrabarti Live
+  URL:  https://in.bookmyshow.com/events/shamik-chakrabarti-live/ET00421646
+- FUNKY ISLAND - JASOLA
+  URL:  https://in.bookmyshow.com/events/funky-island-jasola/ET00441325
+- Open Mic - Comedy & Poetry.
+  URL:  https://in.bookmyshow.com/events/open-mic-comedy-poetry/ET00345449
+- Kids Summer Camp
+  URL:  https://in.bookmyshow.com/events/kids-summer-camp/ET00443945
+
+Removed events (6):
+- Sit Down Ashish ft. Ashish Vidyarthi
+  URL:  https://in.bookmyshow.com/events/sit-down-ashish-ft-ashish-vidyarthi/ET00446654
+- Vipul Goyal-Unleashed
+  URL:  https://in.bookmyshow.com/events/vipul-goyal-live/ET00346737
+- Rupali Tyagi Live
+  URL:  https://in.bookmyshow.com/events/rupali-tyagi-live/ET00440083
+- Blind Date
+  URL:  https://in.bookmyshow.com/events/blindfolded-conversations/ET00361919
+- Waqt Ki Baatein Tour by Dream Note
+  URL:  https://in.bookmyshow.com/events/waqt-ki-baatein-tour-by-dream-note/ET00449289
+- Girish And The Chronicles (Originals & Covers)
+  URL:  https://in.bookmyshow.com/events/girish-and-the-chronicles-originals-covers/ET00447177
+
+=== New Events Summary ===
+
+1. Adult Jokes Only
+   Venue: N/A
+   Date: N/A
+   URL:  https://in.bookmyshow.com/events/adult-jokes/ET00449702
+
+2. Kal Ki Chinta Nahi Karta ft.Ravi Gupta
+   Venue: N/A
+   Date: N/A
+   URL:  https://in.bookmyshow.com/events/kal-ki-chinta-nahi-karta-ft-ravi-gupta/ET00336178
+
+3. Shamik Chakrabarti Live
+   Venue: N/A
+   Date: N/A
+   URL:  https://in.bookmyshow.com/events/shamik-chakrabarti-live/ET00421646
+
+4. FUNKY ISLAND - JASOLA
+   Venue: N/A
+   Date: N/A
+   URL:  https://in.bookmyshow.com/events/funky-island-jasola/ET00441325
+
+5. Open Mic - Comedy & Poetry.
+   Venue: N/A
+   Date: N/A
+   URL:  https://in.bookmyshow.com/events/open-mic-comedy-poetry/ET00345449
+
+6. Kids Summer Camp
+   Venue: N/A
+   Date: N/A
+   URL:  https://in.bookmyshow.com/events/kids-summer-camp/ET00443945
