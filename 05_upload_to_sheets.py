@@ -8,8 +8,8 @@ from datetime import datetime
 CONFIG = {
     'excel_file': 'events.xlsx',
     'service_account_file': 'service_account.json',
-    'spreadsheet_name': 'TodayReport_BMS',
-    'worksheet_name': 'Sheet1'
+    'spreadsheet_name': 'report',
+    'worksheet_name': 'NCR'
 }
 
 def log_message(message):
