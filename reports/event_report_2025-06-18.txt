@@ -1,0 +1,109 @@
+
+=== Event Comparison Results ===
+Old file: 32 events
+New file: 32 events
+Comparison time: 2025-06-18 08:35:58
+
+Newly added events (12):
+- Passenger India Tour 2025 - New Delhi
+  URL:  https://in.bookmyshow.com/events/passenger-asia-tour-2025-new-delhi/ET00448826
+- So Mini Things with Shraddha Jain- One Last Time
+  URL:  https://in.bookmyshow.com/events/so-mini-things-with-shraddha-jain-one-last-time/ET00445356
+- Bury Worry Musical Concert Ft Amala Krishna Das
+  URL:  https://in.bookmyshow.com/events/bury-worry-musical-concert/ET00449278
+- Indian Poetry - Open Mic Delhi
+  URL:  https://in.bookmyshow.com/events/indian-poetry-open-mic-delhi/ET00432805
+- Alien World at Airia Mall
+  URL:  https://in.bookmyshow.com/events/alien-world-at-airia-mall/ET00445888
+- LEGO SUMMER PLAYGROUND
+  URL:  https://in.bookmyshow.com/events/lego-playground/ET00448718
+- Anime Multiverse : Anime Cosplay
+  URL:  https://in.bookmyshow.com/events/anime-multiverse-anime-cosplay/ET00445738
+- Best of Stand-up - Stand-up Comedy Show
+  URL:  https://in.bookmyshow.com/events/best-of-standup-inder-shreya-kd/ET00358274
+- The Duo ft. Harsh Gujral & Rahul Dua
+  URL:  https://in.bookmyshow.com/events/the-duo-ft-harsh-gujral-rahul-dua/ET00447407
+- MSME Business Summit 2024 India
+  URL:  https://in.bookmyshow.com/events/msme-business-summit-2024-india/ET00448101
+- Confidence - Standup comedy by Ravi Khurana
+  URL:  https://in.bookmyshow.com/events/confidence-standup-comedy-by-ravi-khurana/ET00375871
+- LEGO-IN-ACTION Summer Camp
+  URL:  https://in.bookmyshow.com/events/lego-in-action-summer-camp/ET00444917
+
+Removed events (12):
+- Sip and Paint - Mug Painting
+  URL:  https://in.bookmyshow.com/events/sip-and-paint-mug-painting/ET00449051
+- Rahgir : Kya Jaipur Kya Dilli Tour
+  URL:  https://in.bookmyshow.com/events/rahgir-live/ET00352052
+- TELLING LIES-A STANDUP SOLO BY AASHISH SOLANKI
+  URL:  https://in.bookmyshow.com/events/aashish-solanki-live-a-standup-comedy-show/ET00446458
+- Shaadi Shud I? By Mohammed Hussain
+  URL:  https://in.bookmyshow.com/events/shaadi-shud-i-by-mohammed-hussain/ET00446879
+- Standup Stars - The Best of Stand-Up
+  URL:  https://in.bookmyshow.com/events/all-is-well-feel-good-standup-comedy/ET00380698
+- Meet the Dinosaurs at North India Mall
+  URL:  https://in.bookmyshow.com/events/meet-the-dinosaurs-at-north-india-mall/ET00443230
+- Kal Ki Chinta Nahi Karta ft.Ravi Gupta
+  URL:  https://in.bookmyshow.com/events/kal-ki-chinta-nahi-karta-ft-ravi-gupta/ET00336178
+- BLUNT ft. Onkar
+  URL:  https://in.bookmyshow.com/events/blunt-ft-onkar/ET00421423
+- Hand Built Pottery
+  URL:  https://in.bookmyshow.com/events/clay-play-day/ET00385148
+- SONU NIGAM LIVE IN CONCERT GURUGRAM
+  URL:  https://in.bookmyshow.com/events/sonu-nigam-live-in-concert-gurugram/ET00439782
+- Texture Art ft. ChalkBooard
+  URL:  https://in.bookmyshow.com/events/texture-art-ft-chalkbooard/ET00448041
+- Kaviraj Singh LIVE!!!
+  URL:  https://in.bookmyshow.com/events/kaviraj-singh-live/ET00445360
+
+=== New Events Summary ===
+
+1. Passenger India Tour 2025 - New Delhi
+   Venue: N/A
+   Date: N/A
+   URL:  https://in.bookmyshow.com/events/passenger-asia-tour-2025-new-delhi/ET00448826
+
+2. So Mini Things with Shraddha Jain- One Last Time
+   Venue: N/A
+   Date: N/A
+   URL:  https://in.bookmyshow.com/events/so-mini-things-with-shraddha-jain-one-last-time/ET00445356
+
+3. Bury Worry Musical Concert Ft Amala Krishna Das
+   Venue: N/A
+   Date: N/A
+   URL:  https://in.bookmyshow.com/events/bury-worry-musical-concert/ET00449278
+
+4. Indian Poetry - Open Mic Delhi
+   Venue: N/A
+   Date: N/A
+   URL:  https://in.bookmyshow.com/events/indian-poetry-open-mic-delhi/ET00432805
+
+5. Alien World at Airia Mall
+   Venue: N/A
+   Date: N/A
+   URL:  https://in.bookmyshow.com/events/alien-world-at-airia-mall/ET00445888
+
+6. LEGO SUMMER PLAYGROUND
+   Venue: N/A
+   Date: N/A
+   URL:  https://in.bookmyshow.com/events/lego-playground/ET00448718
+
+7. Anime Multiverse : Anime Cosplay
+   Venue: N/A
+   Date: N/A
+   URL:  https://in.bookmyshow.com/events/anime-multiverse-anime-cosplay/ET00445738
+
+8. Best of Stand-up - Stand-up Comedy Show
+   Venue: N/A
+   Date: N/A
+   URL:  https://in.bookmyshow.com/events/best-of-standup-inder-shreya-kd/ET00358274
+
+9. The Duo ft. Harsh Gujral & Rahul Dua
+   Venue: N/A
+   Date: N/A
+   URL:  https://in.bookmyshow.com/events/the-duo-ft-harsh-gujral-rahul-dua/ET00447407
+
+10. MSME Business Summit 2024 India
+   Venue: N/A
+   Date: N/A
+   URL:  https://in.bookmyshow.com/events/msme-business-summit-2024-india/ET00448101
