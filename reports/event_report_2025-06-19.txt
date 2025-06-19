@@ -1,0 +1,56 @@
+
+=== Event Comparison Results ===
+Old file: 32 events
+New file: 14 events
+Comparison time: 2025-06-19 08:36:41
+
+Newly added events (1):
+- Cap Mania Tour ft Himesh Reshammiya
+  URL:  https://in.bookmyshow.com/events/cap-mania-tour-ft-himesh-reshammiya/ET00441454
+
+Removed events (19):
+- LEGO-IN-ACTION Summer Camp
+  URL:  https://in.bookmyshow.com/events/lego-in-action-summer-camp/ET00444917
+- PRACTICE - A Standup Comedy Show by Manik Mahna
+  URL:  https://in.bookmyshow.com/events/practice-a-standup-comedy-show-by-manik-mahna/ET00436797
+- Bury Worry Musical Concert Ft Amala Krishna Das
+  URL:  https://in.bookmyshow.com/events/bury-worry-musical-concert/ET00449278
+- Sufi Night ft. Sultani Brothers
+  URL:  https://in.bookmyshow.com/events/sufi-night-ft-sultani-brothers/ET00444581
+- So Mini Things with Shraddha Jain- One Last Time
+  URL:  https://in.bookmyshow.com/events/so-mini-things-with-shraddha-jain-one-last-time/ET00445356
+- Jo Bolta Hai Wahi Hota Hai Ft. Harsh Gujral- Delhi
+  URL:  https://in.bookmyshow.com/events/jo-bolta-hai-wahi-hota-hai-ft-harsh-gujral/ET00404471
+- LEGO SUMMER PLAYGROUND
+  URL:  https://in.bookmyshow.com/events/lego-playground/ET00448718
+- Kisi Ko Batana Mat By Anubhav Singh Bassi
+  URL:  https://in.bookmyshow.com/events/kisi-ko-batana-mat-by-anubhav-singh-bassi/ET00402115
+- Alien World at Airia Mall
+  URL:  https://in.bookmyshow.com/events/alien-world-at-airia-mall/ET00445888
+- Anime Multiverse : Anime Cosplay
+  URL:  https://in.bookmyshow.com/events/anime-multiverse-anime-cosplay/ET00445738
+- MSME Business Summit 2024 India
+  URL:  https://in.bookmyshow.com/events/msme-business-summit-2024-india/ET00448101
+- STAND UP COMEDY SHOW
+  URL:  https://in.bookmyshow.com/events/stand-up-comedy-show/ET00360146
+- Best of Stand-up - Stand-up Comedy Show
+  URL:  https://in.bookmyshow.com/events/best-of-standup-inder-shreya-kd/ET00358274
+- Passenger India Tour 2025 - New Delhi
+  URL:  https://in.bookmyshow.com/events/passenger-asia-tour-2025-new-delhi/ET00448826
+- Pottery Workshop
+  URL:  https://in.bookmyshow.com/events/pottery-workshop/ET00448070
+- Confidence - Standup comedy by Ravi Khurana
+  URL:  https://in.bookmyshow.com/events/confidence-standup-comedy-by-ravi-khurana/ET00375871
+- Comedy Nights Noida
+  URL:  https://in.bookmyshow.com/events/comedy-nights-noida/ET00407257
+- Jo Bolta Hai Wohi Hota Hai Ft. Harsh Gujral
+  URL:  https://in.bookmyshow.com/events/jo-bolta-hai-wohi-hota-hai-ft-by-harsh-gujral/ET00319088
+- Indian Poetry - Open Mic Delhi
+  URL:  https://in.bookmyshow.com/events/indian-poetry-open-mic-delhi/ET00432805
+
+=== New Events Summary ===
+
+1. Cap Mania Tour ft Himesh Reshammiya
+   Venue: N/A
+   Date: N/A
+   URL:  https://in.bookmyshow.com/events/cap-mania-tour-ft-himesh-reshammiya/ET00441454
