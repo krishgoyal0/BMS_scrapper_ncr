@@ -1,0 +1,113 @@
+
+=== Event Comparison Results ===
+Old file: 14 events
+New file: 32 events
+Comparison time: 2025-06-20 08:35:22
+
+Newly added events (22):
+- KidZania Delhi NCR
+  URL:  https://in.bookmyshow.com/events/kidzania-delhi-ncr/ET00446821
+- DJ Chetas - Chandni Bar Meets Bollywood (Gurugram)
+  URL:  https://in.bookmyshow.com/events/dj-chetas-chandni-bar-meets-bollywood-gurugram/ET00448540
+- Life ka Tamasha by Amandeep Khayal - Delhi
+  URL:  https://in.bookmyshow.com/events/life-ka-tamasha-by-amandeep-khayal-delhi/ET00445675
+- Adult Jokes Only
+  URL:  https://in.bookmyshow.com/events/adult-jokes/ET00449702
+- Urooj Ashfaq's It's Funny To Me
+  URL:  https://in.bookmyshow.com/events/urooj-ashfaq-s-it-s-funny-to-me/ET00423479
+- Yoga with Puppies by Pawasana
+  URL:  https://in.bookmyshow.com/events/yoga-with-puppies-by-pawasana/ET00449955
+- World Music Weekend
+  URL:  https://in.bookmyshow.com/events/world-music-weekend/ET00449087
+- Jo Bolta Hai Wohi Hota Hai Ft. Harsh Gujral
+  URL:  https://in.bookmyshow.com/events/jo-bolta-hai-wohi-hota-hai-ft-by-harsh-gujral/ET00319088
+- Crowd-Work Show by Manhar Seth
+  URL:  https://in.bookmyshow.com/events/crowd-work-by-manhar-seth/ET00373919
+- PRACTICE - A Standup Comedy Show by Manik Mahna
+  URL:  https://in.bookmyshow.com/events/practice-a-standup-comedy-show-by-manik-mahna/ET00436797
+- Halki Halki Fati? By Vikas Kush Sharma
+  URL:  https://in.bookmyshow.com/events/halki-halki-fati-by-vikas-kush-sharma/ET00407605
+- Kisi Ko Batana Mat By Anubhav Singh Bassi
+  URL:  https://in.bookmyshow.com/events/kisi-ko-batana-mat-by-anubhav-singh-bassi/ET00402115
+- Speed dating
+  URL:  https://in.bookmyshow.com/events/speed-dating/ET00412881
+- Circus Festival
+  URL:  https://in.bookmyshow.com/events/circus-festival/ET00450374
+- Comedy Show Noida Sector 18
+  URL:  https://in.bookmyshow.com/events/comedy-show-noida-sector-18/ET00448749
+- Pottery Date
+  URL:  https://in.bookmyshow.com/events/pottery-date/ET00370222
+- LEGO SUMMER PLAYGROUND
+  URL:  https://in.bookmyshow.com/events/lego-playground/ET00448718
+- Master Peace - Standup Comedy Show By Madhur Virli
+  URL:  https://in.bookmyshow.com/events/madhur-virli-live-a-stand-up-comedy-show/ET00350072
+- One Night StandUp - Standup comedy
+  URL:  https://in.bookmyshow.com/events/all-is-well-standup-comedy/ET00400767
+- Best of Stand-up - Stand-up Comedy Show
+  URL:  https://in.bookmyshow.com/events/best-of-standup-inder-shreya-kd/ET00358274
+- Comedy Nights Noida
+  URL:  https://in.bookmyshow.com/events/comedy-nights-noida/ET00407257
+- Perfume Making Workshop
+  URL:  https://in.bookmyshow.com/events/perfume-making-workshop/ET00384549
+
+Removed events (4):
+- Van Gogh - An Immersive Story
+  URL:  https://in.bookmyshow.com/events/van-gogh-an-immersive-story/ET00440776
+- Da Vinci Genius - Interactive Immersive Experience
+  URL:  https://in.bookmyshow.com/events/da-vinci-genius-interactive-immersive-experience/ET00440777
+- Cap Mania Tour ft Himesh Reshammiya
+  URL:  https://in.bookmyshow.com/events/cap-mania-tour-ft-himesh-reshammiya/ET00441454
+- Bismil Ki Mehfil 2025 - Delhi
+  URL:  https://in.bookmyshow.com/events/bismil-ki-mehfil-2025-delhi/ET00443289
+
+=== New Events Summary ===
+
+1. KidZania Delhi NCR
+   Venue: N/A
+   Date: N/A
+   URL:  https://in.bookmyshow.com/events/kidzania-delhi-ncr/ET00446821
+
+2. DJ Chetas - Chandni Bar Meets Bollywood (Gurugram)
+   Venue: N/A
+   Date: N/A
+   URL:  https://in.bookmyshow.com/events/dj-chetas-chandni-bar-meets-bollywood-gurugram/ET00448540
+
+3. Life ka Tamasha by Amandeep Khayal - Delhi
+   Venue: N/A
+   Date: N/A
+   URL:  https://in.bookmyshow.com/events/life-ka-tamasha-by-amandeep-khayal-delhi/ET00445675
+
+4. Adult Jokes Only
+   Venue: N/A
+   Date: N/A
+   URL:  https://in.bookmyshow.com/events/adult-jokes/ET00449702
+
+5. Urooj Ashfaq's It's Funny To Me
+   Venue: N/A
+   Date: N/A
+   URL:  https://in.bookmyshow.com/events/urooj-ashfaq-s-it-s-funny-to-me/ET00423479
+
+6. Yoga with Puppies by Pawasana
+   Venue: N/A
+   Date: N/A
+   URL:  https://in.bookmyshow.com/events/yoga-with-puppies-by-pawasana/ET00449955
+
+7. World Music Weekend
+   Venue: N/A
+   Date: N/A
+   URL:  https://in.bookmyshow.com/events/world-music-weekend/ET00449087
+
+8. Jo Bolta Hai Wohi Hota Hai Ft. Harsh Gujral
+   Venue: N/A
+   Date: N/A
+   URL:  https://in.bookmyshow.com/events/jo-bolta-hai-wohi-hota-hai-ft-by-harsh-gujral/ET00319088
+
+9. Crowd-Work Show by Manhar Seth
+   Venue: N/A
+   Date: N/A
+   URL:  https://in.bookmyshow.com/events/crowd-work-by-manhar-seth/ET00373919
+
+10. PRACTICE - A Standup Comedy Show by Manik Mahna
+   Venue: N/A
+   Date: N/A
+   URL:  https://in.bookmyshow.com/events/practice-a-standup-comedy-show-by-manik-mahna/ET00436797
