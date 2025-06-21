@@ -1,0 +1,128 @@
+
+=== Event Comparison Results ===
+Old file: 32 events
+New file: 14 events
+Comparison time: 2025-06-21 08:31:54
+
+Newly added events (9):
+- Van Gogh - An Immersive Story
+  URL:  https://in.bookmyshow.com/events/van-gogh-an-immersive-story/ET00440776
+- Passenger India Tour 2025 - New Delhi
+  URL:  https://in.bookmyshow.com/events/passenger-asia-tour-2025-new-delhi/ET00448826
+- Jazbaa Ft Rekha Bhardwaj Live in Concert
+  URL:  https://in.bookmyshow.com/events/jazbaa-ft-rekha-bharadwaj-live-in-concert/ET00415475
+- SONU NIGAM LIVE IN CONCERT GURUGRAM
+  URL:  https://in.bookmyshow.com/events/sonu-nigam-live-in-concert-gurugram/ET00439782
+- Cap Mania Tour ft Himesh Reshammiya
+  URL:  https://in.bookmyshow.com/events/cap-mania-tour-ft-himesh-reshammiya/ET00441454
+- Sufi Night ft. Master Saleem Live at Khubani
+  URL:  https://in.bookmyshow.com/events/sufi-night-ft-master-saleem-live-at-khubani/ET00450137
+- Da Vinci Genius - Interactive Immersive Experience
+  URL:  https://in.bookmyshow.com/events/da-vinci-genius-interactive-immersive-experience/ET00440777
+- F1 BEYOND THE TRACK: Movie Screening + Experience
+  URL:  https://in.bookmyshow.com/events/f1-beyond-the-track-movie-screening-experience/ET00449813
+- Bismil Ki Mehfil 2025 - Delhi
+  URL:  https://in.bookmyshow.com/events/bismil-ki-mehfil-2025-delhi/ET00443289
+
+Removed events (27):
+- Adult Jokes Only
+  URL:  https://in.bookmyshow.com/events/adult-jokes/ET00449702
+- The Duo ft. Harsh Gujral & Rahul Dua
+  URL:  https://in.bookmyshow.com/events/the-duo-ft-harsh-gujral-rahul-dua/ET00447407
+- Yoga with Puppies by Pawasana
+  URL:  https://in.bookmyshow.com/events/yoga-with-puppies-by-pawasana/ET00449955
+- Halki Halki Fati? By Vikas Kush Sharma
+  URL:  https://in.bookmyshow.com/events/halki-halki-fati-by-vikas-kush-sharma/ET00407605
+- Comedy Nights Noida
+  URL:  https://in.bookmyshow.com/events/comedy-nights-noida/ET00407257
+- One Night StandUp - Standup comedy
+  URL:  https://in.bookmyshow.com/events/all-is-well-standup-comedy/ET00400767
+- LEGO SUMMER PLAYGROUND
+  URL:  https://in.bookmyshow.com/events/lego-playground/ET00448718
+- Daily Ka Kaam Hai By Aakash Gupta
+  URL:  https://in.bookmyshow.com/events/excuse-me-brother-standup-solo-by-aakash-gupta/ET00347268
+- Jo Bolta Hai Wahi Hota Hai feat Harsh Gujral
+  URL:  https://in.bookmyshow.com/events/jo-bolta-hai-wohi-hota-hai-feat-harsh-gujral/ET00145294
+- DJ Chetas - Chandni Bar Meets Bollywood (Gurugram)
+  URL:  https://in.bookmyshow.com/events/dj-chetas-chandni-bar-meets-bollywood-gurugram/ET00448540
+- Crowd-Work Show by Manhar Seth
+  URL:  https://in.bookmyshow.com/events/crowd-work-by-manhar-seth/ET00373919
+- Urooj Ashfaq's It's Funny To Me
+  URL:  https://in.bookmyshow.com/events/urooj-ashfaq-s-it-s-funny-to-me/ET00423479
+- Jo Bolta Hai Wohi Hota Hai Ft. Harsh Gujral
+  URL:  https://in.bookmyshow.com/events/jo-bolta-hai-wohi-hota-hai-ft-by-harsh-gujral/ET00319088
+- Comedy Show Noida Sector 18
+  URL:  https://in.bookmyshow.com/events/comedy-show-noida-sector-18/ET00448749
+- Pottery Date
+  URL:  https://in.bookmyshow.com/events/pottery-date/ET00370222
+- Life ka Tamasha by Amandeep Khayal - Delhi
+  URL:  https://in.bookmyshow.com/events/life-ka-tamasha-by-amandeep-khayal-delhi/ET00445675
+- Speed dating
+  URL:  https://in.bookmyshow.com/events/speed-dating/ET00412881
+- PRACTICE - A Standup Comedy Show by Manik Mahna
+  URL:  https://in.bookmyshow.com/events/practice-a-standup-comedy-show-by-manik-mahna/ET00436797
+- Master Peace - Standup Comedy Show By Madhur Virli
+  URL:  https://in.bookmyshow.com/events/madhur-virli-live-a-stand-up-comedy-show/ET00350072
+- KidZania Delhi NCR
+  URL:  https://in.bookmyshow.com/events/kidzania-delhi-ncr/ET00446821
+- Kisi Ko Batana Mat By Anubhav Singh Bassi
+  URL:  https://in.bookmyshow.com/events/kisi-ko-batana-mat-by-anubhav-singh-bassi/ET00402115
+- Circus Festival
+  URL:  https://in.bookmyshow.com/events/circus-festival/ET00450374
+- Best of Stand-up - Stand-up Comedy Show
+  URL:  https://in.bookmyshow.com/events/best-of-standup-inder-shreya-kd/ET00358274
+- Kisi Ko Batana Mat By Anubhav Singh Bassi - Delhi
+  URL:  https://in.bookmyshow.com/events/kisi-ko-batana-mat-by-anubhav-singh-bassi/ET00383732
+- Perfume Making Workshop
+  URL:  https://in.bookmyshow.com/events/perfume-making-workshop/ET00384549
+- World Music Weekend
+  URL:  https://in.bookmyshow.com/events/world-music-weekend/ET00449087
+- HCL Concerts presents Dr. L Subramaniam Live
+  URL:  https://in.bookmyshow.com/events/hcl-concerts-presents-dr-l-subramaniam-live/ET00448429
+
+=== New Events Summary ===
+
+1. Van Gogh - An Immersive Story
+   Venue: N/A
+   Date: N/A
+   URL:  https://in.bookmyshow.com/events/van-gogh-an-immersive-story/ET00440776
+
+2. Passenger India Tour 2025 - New Delhi
+   Venue: N/A
+   Date: N/A
+   URL:  https://in.bookmyshow.com/events/passenger-asia-tour-2025-new-delhi/ET00448826
+
+3. Jazbaa Ft Rekha Bhardwaj Live in Concert
+   Venue: N/A
+   Date: N/A
+   URL:  https://in.bookmyshow.com/events/jazbaa-ft-rekha-bharadwaj-live-in-concert/ET00415475
+
+4. SONU NIGAM LIVE IN CONCERT GURUGRAM
+   Venue: N/A
+   Date: N/A
+   URL:  https://in.bookmyshow.com/events/sonu-nigam-live-in-concert-gurugram/ET00439782
+
+5. Cap Mania Tour ft Himesh Reshammiya
+   Venue: N/A
+   Date: N/A
+   URL:  https://in.bookmyshow.com/events/cap-mania-tour-ft-himesh-reshammiya/ET00441454
+
+6. Sufi Night ft. Master Saleem Live at Khubani
+   Venue: N/A
+   Date: N/A
+   URL:  https://in.bookmyshow.com/events/sufi-night-ft-master-saleem-live-at-khubani/ET00450137
+
+7. Da Vinci Genius - Interactive Immersive Experience
+   Venue: N/A
+   Date: N/A
+   URL:  https://in.bookmyshow.com/events/da-vinci-genius-interactive-immersive-experience/ET00440777
+
+8. F1 BEYOND THE TRACK: Movie Screening + Experience
+   Venue: N/A
+   Date: N/A
+   URL:  https://in.bookmyshow.com/events/f1-beyond-the-track-movie-screening-experience/ET00449813
+
+9. Bismil Ki Mehfil 2025 - Delhi
+   Venue: N/A
+   Date: N/A
+   URL:  https://in.bookmyshow.com/events/bismil-ki-mehfil-2025-delhi/ET00443289
