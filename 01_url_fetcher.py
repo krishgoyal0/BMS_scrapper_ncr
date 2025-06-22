@@ -71,7 +71,7 @@ def check_event_status(text: str) -> Dict[str, bool]:
 # Scraping Functions
 # ----------------------------
 def scrape_events() -> Optional[List[Dict[str, Any]]]:
-    """Scrape events from BookMyShow website"""
+    """Scrape events from BookMyShow website""" #changes done (few)
     with sync_playwright() as p:
         browser = p.chromium.launch(
             headless=True,
@@ -82,7 +82,7 @@ def scrape_events() -> Optional[List[Dict[str, Any]]]:
                 '--disable-blink-features=AutomationControlled',
                 '--user-agent=' + get_random_user_agent()
             ],
-            slow_mo=200  # Increased delay between actions
+            slow_mo=100  # Reduced delay for faster execution
         )
 
         context = browser.new_context(
@@ -95,7 +95,7 @@ def scrape_events() -> Optional[List[Dict[str, Any]]]:
             is_mobile=False
         )
 
-        # Block unnecessary resources
+        # Block unnecessary resources (improves load time)
         context.route("**/*.{png,jpg,jpeg,webp,gif,svg}", lambda route: route.abort())
         context.route("**/*.css", lambda route: route.abort())
         context.route("**/*.woff2", lambda route: route.abort())
@@ -104,86 +104,57 @@ def scrape_events() -> Optional[List[Dict[str, Any]]]:
 
         try:
             page.set_default_timeout(WAIT_TIMEOUT)
-            print("Loading BookMyShow with realistic behavior...")
+            print("Loading BookMyShow with enhanced detection...")
             page.goto(BASE_URL, wait_until="networkidle")
 
-            # Human-like interactions
-            for _ in range(5):  # Increased interactions
-                page.mouse.move(
-                    random.randint(0, 500),
-                    random.randint(0, 500)
-                )
-                time.sleep(random.uniform(0.5, 2.0))  # Increased delay
+            # Human-like interactions (randomized)
+            for _ in range(3):
+                page.mouse.move(random.randint(0, 500), random.randint(0, 500))
+                time.sleep(random.uniform(0.3, 1.5))
 
             # Dismiss popups
-            for selector in [
-                "button:has-text('Accept')",
-                "button:has-text('Close')",
-                "button:has-text('Got It')",
-                "#onetrust-accept-btn-handler"
-            ]:
+            for selector in ["button:has-text('Accept')", "button:has-text('Close')"]:
                 try:
-                    page.click(selector, timeout=5000)  # Increased timeout
-                    time.sleep(1.5)  # Increased delay
-                    break
+                    page.click(selector, timeout=3000)
                 except:
                     pass
 
-            # Scroll to load content with more attempts and longer delays
-            print("Scrolling to load events...")
-            scroll_attempts = 8  # Increased from 5 to 8
-            scroll_delay_min = 1.5  # Increased minimum delay
-            scroll_delay_max = 3.5  # Increased maximum delay
-            
-            for i in range(scroll_attempts):
-                # Scroll a bit further down each time
-                scroll_distance = f"window.innerHeight * {0.8 + (i * 0.1)}"
-                page.evaluate(f"window.scrollBy(0, {scroll_distance})")
-                print(f"Scroll attempt {i+1}/{scroll_attempts}")
-                time.sleep(random.uniform(scroll_delay_min, scroll_delay_max))
-                
-                # Check for loading indicators
-                try:
-                    loading_selector = "div[class*='loading'], div[class*='spinner']"
-                    page.wait_for_selector(loading_selector, state="hidden", timeout=5000)
-                except:
-                    pass
+            # Scroll to load all events (with dynamic detection)
+            print("Scrolling to load all events...")
+            last_height = page.evaluate("document.body.scrollHeight")
+            scroll_attempts = 0
 
-            # Wait for content to settle after scrolling
-            time.sleep(3)
+            while scroll_attempts < 10:  # Max 10 scroll attempts
+                page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
+                time.sleep(random.uniform(1.0, 2.5))
+                new_height = page.evaluate("document.body.scrollHeight")
+                if new_height == last_height:
+                    break  # No more content to load
+                last_height = new_height
+                scroll_attempts += 1
 
-            # Try multiple selector patterns with more variations
+            # Expanded selectors for event detection
             event_selectors = [
-                "div[class*='card']",
-                "div[class*='event']",
-                "a[href*='/events/']",
-                "div[class*='slide']",
-                "div[data-qa='event-card']",
-                "div[class*='style__EventCardWrapper']",
-                "div[class*='event-card']",
-                "div[class*='card-container']",
-                "div[class*='event-container']"
+                "div[class*='event-card']",  # Primary selector
+                "a[href*='/events/']",       # Fallback for links
+                "div[data-testid*='event']", # TestID-based (common in modern sites)
+                "div[class*='card']:has(h3, h4)",  # Cards with headings
             ]
 
             events = []
             seen_urls = set()
-            
+
             for selector in event_selectors:
                 try:
-                    page.wait_for_selector(selector, timeout=15000)  # Increased timeout
                     cards = page.query_selector_all(selector)
-                    print(f"Found {len(cards)} cards with selector: {selector}")
-
+                    print(f"Found {len(cards)} events with selector: {selector}")
+                    
                     for card in cards:
                         try:
-                            name = card.query_selector("h2, h3, h4, div[class*='title'], div[class*='name'], span[class*='title']")
-                            if not name:
-                                continue
-
-                            url = " " + card.get_attribute("href") if card.get_attribute("href") else "N/A"
+                            name = card.query_selector("h2, h3, h4, [class*='title']")
+                            url = card.get_attribute("href") or "N/A"
                             
-                            # Skip duplicates
-                            if url in seen_urls:
+                            if not name or url == "N/A" or url in seen_urls:
                                 continue
                             seen_urls.add(url)
 
@@ -194,51 +165,34 @@ def scrape_events() -> Optional[List[Dict[str, Any]]]:
                                 "scraped_at": datetime.now().isoformat()
                             }
 
-                            # Extract additional details with more selectors
+                            # Extract additional details
                             details = {
-                                "venue": "div[class*='venue'], div[class*='location'], span[class*='venue'], span[class*='location']",
-                                "date": "div[class*='date'], div[class*='time'], span[class*='date'], span[class*='time']",
-                                "price": "div[class*='price'], span[class*='amount'], div[class*='cost'], span[class*='price']",
-                                "image": "img",
-                                "status": "div[class*='status'], div[class*='tag'], span[class*='ribbon'], div[class*='label']"
+                                "venue": "[class*='venue'], [class*='location']",
+                                "date": "[class*='date'], [class*='time']",
+                                "price": "[class*='price'], [class*='amount']",
+                                "status": "[class*='status'], [class*='tag']"
                             }
                             
                             for key, sel in details.items():
-                                try:
-                                    element = card.query_selector(sel)
-                                    if element:
-                                        if key == "image":
-                                            event_data[key] = element.get_attribute("src") or element.get_attribute("data-src") or "N/A"
-                                        else:
-                                            text_content = element.text_content().strip()
-                                            event_data[key] = text_content
-                                            
-                                            # Check for fast filling or sold out status
-                                            if key == "status":
-                                                status_info = check_event_status(text_content)
-                                                event_data.update(status_info)
-                                except:
-                                    pass
+                                element = card.query_selector(sel)
+                                if element:
+                                    event_data[key] = element.text_content().strip()
+                                    if key == "status":
+                                        event_data.update(check_event_status(event_data[key]))
 
                             events.append(event_data)
                         except Exception as e:
                             print(f"Error processing card: {e}")
                             continue
 
-                    if events:
-                        print(f"Successfully collected {len(events)} events with selector: {selector}")
-                        break
+                except Exception as e:
+                    print(f"Selector failed: {selector} - {e}")
 
-                except PlaywrightTimeoutError:
-                    continue
-
-            # Filter recent events
-            recent_events = [e for e in events if is_recent_event(e['timestamp'])]
-            print(f"Found {len(recent_events)} recent events")
-            return recent_events
+            print(f"Total events captured: {len(events)}")
+            return events  # Return all events (no time filter)
 
         except Exception as e:
-            print(f"Error during scraping: {str(e)}")
+            print(f"Scraping failed: {e}")
             return None
         finally:
             browser.close()
@@ -273,24 +227,18 @@ def load_events(filename: str) -> Dict[str, Dict[str, Any]]:
 
 def compare_events(old_file: str, new_file: str) -> Dict[str, Any]:
     """Compare events between two JSON files and return differences."""
-    # Load events from both files
     old_events = load_events(old_file)
     new_events = load_events(new_file)
     
-    # Get all event URLs
     old_urls = set(old_events.keys())
     new_urls = set(new_events.keys())
     
-    # Find added, removed, and modified events
-    added_urls = new_urls - old_urls
-    removed_urls = old_urls - new_urls
-    
     return {
-        'added': [new_events[url] for url in added_urls],
-        'removed': [old_events[url] for url in removed_urls],
+        'added': list(new_events.values()),  # All current events (new + retained)
+        'removed': [old_events[url] for url in old_urls - new_urls],
         'stats': {
-            'added': len(added_urls),
-            'removed': len(removed_urls),
+            'added': len(new_events),
+            'removed': len(old_urls - new_urls),
             'total_old': len(old_events),
             'total_new': len(new_events)
         }

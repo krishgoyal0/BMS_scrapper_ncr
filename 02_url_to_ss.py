@@ -111,7 +111,7 @@ async def process_event_urls_from_file(file_path, output_dir="screenshots"):
         print(f"Error: Event report file not found: {file_path}")
         return
 
-    pattern = r"Newly added events \(.*?\):(.*?)Removed events"
+    pattern = r"Newly [Aa]dded [Ee]vents \(.*?\):(.*?)(?:Removed [Ee]vents|===)"
     new_events_section = re.search(pattern, content, re.DOTALL)
     
     if not new_events_section:
