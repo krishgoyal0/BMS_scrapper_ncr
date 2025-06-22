@@ -1,0 +1,113 @@
+
+=== Event Comparison Results ===
+Old file: 14 events
+New file: 32 events
+Comparison time: 2025-06-22 08:34:17
+
+Newly added events (22):
+- Bachna Ae Haseeno- Live In Concert
+  URL:  https://in.bookmyshow.com/events/bachna-ee-hasino/ET00440905
+- Blind Date
+  URL:  https://in.bookmyshow.com/events/blindfolded-conversations/ET00361919
+- Swiftchella - A Taylor Swift-Themed Fan Party
+  URL:  https://in.bookmyshow.com/events/swiftchella-a-taylor-swift-themed-fan-party/ET00441036
+- Just Joking - A Stand Up Comedy Line Up
+  URL:  https://in.bookmyshow.com/events/just-joking-a-stand-up-comedy-line-up/ET00364084
+- Telling Lies -A Standup Solo by Aashish Solanki
+  URL:  https://in.bookmyshow.com/events/aashish-solanki-live/ET00447106
+- R D BURMAN NITE
+  URL:  https://in.bookmyshow.com/events/r-d-burman-nite/ET00445393
+- Room XO Presents Mika Singh
+  URL:  https://in.bookmyshow.com/events/room-xo-presents-mika-singh/ET00449317
+- DJ Chetas - Chandni Bar Meets Bollywood (Gurugram)
+  URL:  https://in.bookmyshow.com/events/dj-chetas-chandni-bar-meets-bollywood-gurugram/ET00448540
+- VILEN LIVE - DELHI (NCR)
+  URL:  https://in.bookmyshow.com/events/vilen-live-delhi/ET00441584
+- Comedy Show Noida Sector 18
+  URL:  https://in.bookmyshow.com/events/comedy-show-noida-sector-18/ET00448749
+- Rahgir : Kya Jaipur Kya Dilli Tour
+  URL:  https://in.bookmyshow.com/events/rahgir-live/ET00352052
+- Abhangwari By Mahesh Kale - Delhi
+  URL:  https://in.bookmyshow.com/events/mahesh-kale-s-abhangwari-delhi/ET00441220
+- Open Mic - Comedy & Poetry.
+  URL:  https://in.bookmyshow.com/events/open-mic-comedy-poetry/ET00345449
+- Paint with Puppies by Barket
+  URL:  https://in.bookmyshow.com/events/valentine-s-special-paint-with-puppies-kittens/ET00432354
+- PokerBaazi Presents Nizami Brothers IGT Live
+  URL:  https://in.bookmyshow.com/events/pokerbaazi-presents-nizami-brothers-igt-live/ET00371174
+- A NIGHT OF LAUGHTER FT GAURAV GUPTA
+  URL:  https://in.bookmyshow.com/events/a-night-of-laughter-ft-gaurav-gupta/ET00400535
+- Barkha Ritu - Delhi
+  URL:  https://in.bookmyshow.com/events/barkha-ritu-delhi/ET00448331
+- Krishnaa - Music, Bliss and Beyond
+  URL:  https://in.bookmyshow.com/events/krishna-music-bliss-and-beyond/ET00438839
+- Girish And The Chronicles (Originals & Covers)
+  URL:  https://in.bookmyshow.com/events/girish-and-the-chronicles-originals-covers/ET00447177
+- Adult Standup Comedy Show
+  URL:  https://in.bookmyshow.com/events/adult-standup-comedy-show/ET00440230
+- Dhyan Sangeet Meditation Program: New Delhi
+  URL:  https://in.bookmyshow.com/events/dhyan-sangeet-meditation-program-new-delhi/ET00445995
+- PAPON LIVE IN CONCERT - DELHI
+  URL:  https://in.bookmyshow.com/events/papon-live-in-concert-delhi/ET00448299
+
+Removed events (4):
+- Comedy Nights @Comedy County
+  URL:  https://in.bookmyshow.com/events/comedy-nights-comedy-county/ET00446925
+- KAL KI CHINTA NHI KARTA FT. RAVI GUPTA
+  URL:  https://in.bookmyshow.com/events/kal-ki-chinta-nhi-karta-ft-ravi-gupta/ET00439601
+- Gaurav Kapoor Live
+  URL:  https://in.bookmyshow.com/events/gaurav-kapoor-live/ET00317331
+- Da Vinci Genius - Interactive Immersive Experience
+  URL:  https://in.bookmyshow.com/events/da-vinci-genius-interactive-immersive-experience/ET00440777
+
+=== New Events Summary ===
+
+1. Bachna Ae Haseeno- Live In Concert
+   Venue: N/A
+   Date: N/A
+   URL:  https://in.bookmyshow.com/events/bachna-ee-hasino/ET00440905
+
+2. Blind Date
+   Venue: N/A
+   Date: N/A
+   URL:  https://in.bookmyshow.com/events/blindfolded-conversations/ET00361919
+
+3. Swiftchella - A Taylor Swift-Themed Fan Party
+   Venue: N/A
+   Date: N/A
+   URL:  https://in.bookmyshow.com/events/swiftchella-a-taylor-swift-themed-fan-party/ET00441036
+
+4. Just Joking - A Stand Up Comedy Line Up
+   Venue: N/A
+   Date: N/A
+   URL:  https://in.bookmyshow.com/events/just-joking-a-stand-up-comedy-line-up/ET00364084
+
+5. Telling Lies -A Standup Solo by Aashish Solanki
+   Venue: N/A
+   Date: N/A
+   URL:  https://in.bookmyshow.com/events/aashish-solanki-live/ET00447106
+
+6. R D BURMAN NITE
+   Venue: N/A
+   Date: N/A
+   URL:  https://in.bookmyshow.com/events/r-d-burman-nite/ET00445393
+
+7. Room XO Presents Mika Singh
+   Venue: N/A
+   Date: N/A
+   URL:  https://in.bookmyshow.com/events/room-xo-presents-mika-singh/ET00449317
+
+8. DJ Chetas - Chandni Bar Meets Bollywood (Gurugram)
+   Venue: N/A
+   Date: N/A
+   URL:  https://in.bookmyshow.com/events/dj-chetas-chandni-bar-meets-bollywood-gurugram/ET00448540
+
+9. VILEN LIVE - DELHI (NCR)
+   Venue: N/A
+   Date: N/A
+   URL:  https://in.bookmyshow.com/events/vilen-live-delhi/ET00441584
+
+10. Comedy Show Noida Sector 18
+   Venue: N/A
+   Date: N/A
+   URL:  https://in.bookmyshow.com/events/comedy-show-noida-sector-18/ET00448749
