@@ -4,6 +4,11 @@ import json
 import re
 import os
 from pathlib import Path
+from datetime import datetime
+
+# Add these 2 lines below other imports
+HISTORICAL_FOLDER = "historical"
+SHORT_DATE_FORMAT = "%d-%m-%y"  # DD-MM-YY format
 
 def extract_event_details(image_path):
     try:
@@ -183,8 +188,21 @@ def process_screenshots_folder(folder_path='screenshots'):
     
     return all_events
 
+# def save_to_json(data, output_file='all_event_details.json'):
+#     with open(output_file, 'w', encoding='utf-8') as f:
+#         json.dump(data, f, indent=4, ensure_ascii=False)
+
 def save_to_json(data, output_file='all_event_details.json'):
+    """Save to both main file and historical dated copy"""
+    Path(HISTORICAL_FOLDER).mkdir(parents=True, exist_ok=True)
+    
+    # 1. Original save (unchanged)
     with open(output_file, 'w', encoding='utf-8') as f:
+        json.dump(data, f, indent=4, ensure_ascii=False)
+    
+    # 2. New historical save (only addition)
+    dated_file = f"{datetime.now().strftime(SHORT_DATE_FORMAT)}_aed.json"
+    with open(Path(HISTORICAL_FOLDER) / dated_file, 'w', encoding='utf-8') as f:
         json.dump(data, f, indent=4, ensure_ascii=False)
 
 if __name__ == "__main__":
