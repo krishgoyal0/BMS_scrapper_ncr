@@ -193,24 +193,24 @@ def process_screenshots_folder(folder_path='screenshots'):
 #         json.dump(data, f, indent=4, ensure_ascii=False)
 
 def save_to_json(data, output_file='all_event_details.json'):
+    """Save to both main file and historical dated copy"""
     Path(HISTORICAL_FOLDER).mkdir(parents=True, exist_ok=True)
     
-    # Create a copy of data with cleaned event names (remove first 2 digits if present)
+    # Create a copy of data with cleaned event names
     cleaned_data = []
     for event in data:
         event_copy = event.copy()
-        # Remove first 2 digits only if they exist at start of name
-        event_copy['event_name'] = re.sub(r'^\d{2}', '', event['event_name'], count=1)
+        # Remove first 2 digits AND any following space/underscore
+        event_copy['event_name'] = re.sub(r'^\d{2}[\s_]*', '', event['event_name'])
         cleaned_data.append(event_copy)
     
     # Sort the cleaned data alphabetically by event name (case-insensitive)
     sorted_data = sorted(cleaned_data, key=lambda x: x['event_name'].lower())
     
-    # 1. Original save (unchanged)
+    # Save files (rest remains unchanged)
     with open(output_file, 'w', encoding='utf-8') as f:
         json.dump(sorted_data, f, indent=4, ensure_ascii=False)
     
-    # 2. New historical save (only addition)
     dated_file = f"{datetime.now().strftime(SHORT_DATE_FORMAT)}_aed.json"
     with open(Path(HISTORICAL_FOLDER) / dated_file, 'w', encoding='utf-8') as f:
         json.dump(sorted_data, f, indent=4, ensure_ascii=False)
