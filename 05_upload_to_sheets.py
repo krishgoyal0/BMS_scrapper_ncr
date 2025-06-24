@@ -18,7 +18,8 @@ CONFIG = {
     'daily_reports_folder_id': '1pixEQ9Vu9Sq8SqN5PdFlqhuyKjkAjPqx',
     
     # Event tracking configuration
-    'event_history_folder_id': '1Gnrt7hTh1kVdt_jk1nhHWXawNOFHQKpq',
+    # 'event_history_folder_id': '1Gnrt7hTh1kVdt_jk1nhHWXawNOFHQKpq',
+    'event_history_folder_id': '1ACEskNlX6VLo1YSGl1N7RMlhnnWV2pxx',
     'backup_delay_seconds': 5,
     'historical_folder': 'historical'  # Folder for dated JSON files
 }
