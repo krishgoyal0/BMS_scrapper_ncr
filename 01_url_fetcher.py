@@ -71,7 +71,7 @@ def check_event_status(text: str) -> Dict[str, bool]:
 # Scraping Functions
 # ----------------------------
 def scrape_events() -> Optional[List[Dict[str, Any]]]:
-    """Scrape events from BookMyShow website""" #changes done (few)
+    """Scrape events from BookMyShow website with improved robustness."""
     with sync_playwright() as p:
         browser = p.chromium.launch(
             headless=True,
@@ -112,33 +112,61 @@ def scrape_events() -> Optional[List[Dict[str, Any]]]:
                 page.mouse.move(random.randint(0, 500), random.randint(0, 500))
                 time.sleep(random.uniform(0.3, 1.5))
 
-            # Dismiss popups
+            # Dismiss popups with retries
             for selector in ["button:has-text('Accept')", "button:has-text('Close')"]:
                 try:
                     page.click(selector, timeout=3000)
                 except:
                     pass
 
-            # Scroll to load all events (with dynamic detection)
+            # Improved scrolling to load all events
             print("Scrolling to load all events...")
             last_height = page.evaluate("document.body.scrollHeight")
             scroll_attempts = 0
+            max_scroll_attempts = 15  # Increased max attempts
+            last_event_count = 0
+            retry_count = 0
+            max_retries = 2
 
-            while scroll_attempts < 10:  # Max 10 scroll attempts
+            while scroll_attempts < max_scroll_attempts:
+                # Scroll to bottom
                 page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
-                time.sleep(random.uniform(1.0, 2.5))
+                time.sleep(random.uniform(1.5, 3.0))  # Increased delay for dynamic content
+
+                # Wait for new content to load
+                try:
+                    page.wait_for_function(
+                        "(prevHeight) => { return document.body.scrollHeight > prevHeight; }",
+                        arg=last_height,
+                        timeout=5000
+                    )
+                except:
+                    pass  # Ignore timeout if no new content loads
+
                 new_height = page.evaluate("document.body.scrollHeight")
                 if new_height == last_height:
-                    break  # No more content to load
-                last_height = new_height
+                    # Check if new events were loaded despite no height change
+                    current_events = page.query_selector_all("div[class*='event-card']")
+                    if len(current_events) > last_event_count:
+                        last_event_count = len(current_events)
+                        retry_count = 0  # Reset retry counter if new events found
+                    else:
+                        retry_count += 1
+                        if retry_count >= max_retries:
+                            break  # Stop if no new events after retries
+                else:
+                    last_height = new_height
+                    retry_count = 0  # Reset retry counter on successful scroll
+
                 scroll_attempts += 1
 
-            # Expanded selectors for event detection
+            # Expanded selectors for event detection with fallbacks
             event_selectors = [
                 "div[class*='event-card']",  # Primary selector
                 "a[href*='/events/']",       # Fallback for links
-                "div[data-testid*='event']", # TestID-based (common in modern sites)
-                "div[class*='card']:has(h3, h4)",  # Cards with headings
+                "div[data-testid*='event']", # TestID-based
+                "div[class*='card']:has(h3, h4)",  # Generic card with heading
+                "div[class*='event']",      # Generic event class
             ]
 
             events = []
@@ -165,7 +193,7 @@ def scrape_events() -> Optional[List[Dict[str, Any]]]:
                                 "scraped_at": datetime.now().isoformat()
                             }
 
-                            # Extract additional details
+                            # Extract additional details with retries
                             details = {
                                 "venue": "[class*='venue'], [class*='location']",
                                 "date": "[class*='date'], [class*='time']",
@@ -182,21 +210,21 @@ def scrape_events() -> Optional[List[Dict[str, Any]]]:
 
                             events.append(event_data)
                         except Exception as e:
-                            print(f"Error processing card: {e}")
+                            print(f"Error processing card (retrying...): {e}")
                             continue
 
                 except Exception as e:
                     print(f"Selector failed: {selector} - {e}")
 
             print(f"Total events captured: {len(events)}")
-            return events  # Return all events (no time filter)
+            return events
 
         except Exception as e:
             print(f"Scraping failed: {e}")
             return None
         finally:
             browser.close()
-
+            
 def save_events(events: List[Dict], date: str) -> None:
     """Save events to JSON file"""
     if not events:
