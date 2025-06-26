@@ -1,0 +1,137 @@
+
+=== Event Comparison Results ===
+Old file: 20 events
+New file: 20 events
+Comparison time: 2025-06-26 16:33:05
+
+Newly added events (20):
+- Rambo Circus - Delhi
+  URL: https://in.bookmyshow.com/events/rambo-circus/ET00332998
+- Rahgir : Kya Jaipur Kya Dilli Tour
+  URL: https://in.bookmyshow.com/events/rahgir-live/ET00352052
+- Passenger India Tour 2025 - New Delhi
+  URL: https://in.bookmyshow.com/events/passenger-asia-tour-2025-new-delhi/ET00448826
+- Life ka Tamasha by Amandeep Khayal - Delhi
+  URL: https://in.bookmyshow.com/events/life-ka-tamasha-by-amandeep-khayal-delhi/ET00445675
+- Circus Festival
+  URL: https://in.bookmyshow.com/events/circus-festival/ET00450374
+- Tum, Main aur Ishq - Ashish Bagrecha
+  URL: https://in.bookmyshow.com/events/tum-main-aur-ishq/ET00441194
+- Priya Malik's Ishq Hai
+  URL: https://in.bookmyshow.com/events/priya-malik-s-ishq-hai/ET00450254
+- Ghar - An Open Mic For Words By Tape A Tale
+  URL: https://in.bookmyshow.com/events/ghar-an-open-mic-for-words-by-tape-a-tale/ET00377836
+- Anand Utsav
+  URL: https://in.bookmyshow.com/events/anand-utsav/ET00449539
+- Delhi Open Mic - Poetry & Storytelling
+  URL: https://in.bookmyshow.com/events/open-mic-poetry-storytelling-singing-spoken/ET00366994
+- Indian Classical Live Dance and Music
+  URL: https://in.bookmyshow.com/events/indian-classical-live-dance-and-music/ET00413493
+- Naram lehja by Kanha Kamboj
+  URL: https://in.bookmyshow.com/events/naram-lehja-by-kanha-kamboj/ET00411760
+- Poetry Storytelling & Chai Hosted by Ravie Solanky
+  URL: https://in.bookmyshow.com/events/poetry-storytelling-aur-chai/ET00305723
+- The Seventh Sense ft. Rohan Magic
+  URL: https://in.bookmyshow.com/events/the-seventh-sense-ft-rohan-magic/ET00446204
+- Sahas by Amrita Saluja
+  URL: https://in.bookmyshow.com/events/sahas-by-amrita-saluja/ET00440898
+- Ujaalon Ka Safar
+  URL: https://in.bookmyshow.com/events/ujaalon-ka-safar/ET00447349
+- Voices: Delhi : Poetry and Storytelling Showcase
+  URL: https://in.bookmyshow.com/events/open-mic-delhi-poetry-storytelling-and-music/ET00444399
+- Poetry & Storytelling Open Mic - Unheard Diaries
+  URL: https://in.bookmyshow.com/events/unheard-diaries-poetry-storytelling-open-mic/ET00338509
+- Open Mic Delhi - Comedy, Poetry & Storytelling!!
+  URL: https://in.bookmyshow.com/events/open-mic-delhi-poetry-storytelling/ET00418258
+- Saturday Open Mic - Unmukt Delhi
+  URL: https://in.bookmyshow.com/events/open-mic-comedy-poetry-singing-storytelling/ET00360555
+
+Removed events (18):
+- Comedy Nights @Comedy County
+  URL: https://in.bookmyshow.com/events/comedy-nights-comedy-county/ET00446925
+- Kisi Ko Batana Mat By Anubhav Singh Bassi - Delhi
+  URL: https://in.bookmyshow.com/events/kisi-ko-batana-mat-by-anubhav-singh-bassi/ET00383732
+- Master Peace - Standup Comedy Show By Madhur Virli
+  URL: https://in.bookmyshow.com/events/madhur-virli-live-a-stand-up-comedy-show/ET00350072
+- Da Vinci Genius - Interactive Immersive Experience
+  URL: https://in.bookmyshow.com/events/da-vinci-genius-interactive-immersive-experience/ET00440777
+- SONU NIGAM LIVE IN CONCERT GURUGRAM
+  URL: https://in.bookmyshow.com/events/sonu-nigam-live-in-concert-gurugram/ET00439782
+- Bismil Ki Mehfil 2025 - Delhi
+  URL: https://in.bookmyshow.com/events/bismil-ki-mehfil-2025-delhi/ET00443289
+- Gaurav Kapoor Live
+  URL: https://in.bookmyshow.com/events/gaurav-kapoor-live/ET00317331
+- Jazbaa Ft Rekha Bhardwaj Live in Concert
+  URL: https://in.bookmyshow.com/events/jazbaa-ft-rekha-bharadwaj-live-in-concert/ET00415475
+- Van Gogh - An Immersive Story
+  URL: https://in.bookmyshow.com/events/van-gogh-an-immersive-story/ET00440776
+- Daily Ka Kaam Hai By Aakash Gupta
+  URL: https://in.bookmyshow.com/events/excuse-me-brother-standup-solo-by-aakash-gupta/ET00347268
+- DJ Chetas - Chandni Bar Meets Bollywood (Gurugram)
+  URL: https://in.bookmyshow.com/events/dj-chetas-chandni-bar-meets-bollywood-gurugram/ET00448540
+- KidZania Delhi NCR
+  URL: https://in.bookmyshow.com/events/kidzania-delhi-ncr/ET00446821
+- Cap Mania Tour ft Himesh Reshammiya
+  URL: https://in.bookmyshow.com/events/cap-mania-tour-ft-himesh-reshammiya/ET00441454
+- Kisi Ko Batana Mat By Anubhav Singh Bassi
+  URL: https://in.bookmyshow.com/events/kisi-ko-batana-mat-by-anubhav-singh-bassi/ET00402115
+- So Mini Things with Shraddha Jain- One Last Time
+  URL: https://in.bookmyshow.com/events/so-mini-things-with-shraddha-jain-one-last-time/ET00445356
+- Room XO Presents Mika Singh
+  URL: https://in.bookmyshow.com/events/room-xo-presents-mika-singh/ET00449317
+- Jo Bolta Hai Wohi Hota Hai Ft. Harsh Gujral
+  URL: https://in.bookmyshow.com/events/jo-bolta-hai-wohi-hota-hai-ft-by-harsh-gujral/ET00319088
+- PRACTICE - A Standup Comedy Show by Manik Mahna
+  URL: https://in.bookmyshow.com/events/practice-a-standup-comedy-show-by-manik-mahna/ET00436797
+
+=== New Events Summary ===
+
+1. Rambo Circus - Delhi
+   Venue: N/A
+   Date: N/A
+   URL: https://in.bookmyshow.com/events/rambo-circus/ET00332998
+
+2. Rahgir : Kya Jaipur Kya Dilli Tour
+   Venue: N/A
+   Date: N/A
+   URL: https://in.bookmyshow.com/events/rahgir-live/ET00352052
+
+3. Passenger India Tour 2025 - New Delhi
+   Venue: N/A
+   Date: N/A
+   URL: https://in.bookmyshow.com/events/passenger-asia-tour-2025-new-delhi/ET00448826
+
+4. Life ka Tamasha by Amandeep Khayal - Delhi
+   Venue: N/A
+   Date: N/A
+   URL: https://in.bookmyshow.com/events/life-ka-tamasha-by-amandeep-khayal-delhi/ET00445675
+
+5. Circus Festival
+   Venue: N/A
+   Date: N/A
+   URL: https://in.bookmyshow.com/events/circus-festival/ET00450374
+
+6. Tum, Main aur Ishq - Ashish Bagrecha
+   Venue: N/A
+   Date: N/A
+   URL: https://in.bookmyshow.com/events/tum-main-aur-ishq/ET00441194
+
+7. Priya Malik's Ishq Hai
+   Venue: N/A
+   Date: N/A
+   URL: https://in.bookmyshow.com/events/priya-malik-s-ishq-hai/ET00450254
+
+8. Ghar - An Open Mic For Words By Tape A Tale
+   Venue: N/A
+   Date: N/A
+   URL: https://in.bookmyshow.com/events/ghar-an-open-mic-for-words-by-tape-a-tale/ET00377836
+
+9. Anand Utsav
+   Venue: N/A
+   Date: N/A
+   URL: https://in.bookmyshow.com/events/anand-utsav/ET00449539
+
+10. Delhi Open Mic - Poetry & Storytelling
+   Venue: N/A
+   Date: N/A
+   URL: https://in.bookmyshow.com/events/open-mic-poetry-storytelling-singing-spoken/ET00366994
