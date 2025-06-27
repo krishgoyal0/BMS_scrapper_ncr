@@ -2,136 +2,138 @@
 === Event Comparison Results ===
 Old file: 20 events
 New file: 20 events
-Comparison time: 2025-06-27 10:05:41
+Comparison time: 2025-06-27 10:39:45
 
 Newly added events (20):
-- Van Gogh - An Immersive Story
-  URL: https://in.bookmyshow.com/events/van-gogh-an-immersive-story/ET00440776
-- Rambo Circus - Delhi
-  URL: https://in.bookmyshow.com/events/rambo-circus/ET00332998
-- Cap Mania Tour ft Himesh Reshammiya
-  URL: https://in.bookmyshow.com/events/cap-mania-tour-ft-himesh-reshammiya/ET00441454
-- Passenger India Tour 2025 - New Delhi
-  URL: https://in.bookmyshow.com/events/passenger-asia-tour-2025-new-delhi/ET00448826
+- Rahgir : Kya Jaipur Kya Dilli Tour
+  URL: https://in.bookmyshow.com/events/rahgir-live/ET00352052
+- Bismil Ki Mehfil 2025 - Delhi
+  URL: https://in.bookmyshow.com/events/bismil-ki-mehfil-2025-delhi/ET00443289
 - Gaurav Kapoor Live
   URL: https://in.bookmyshow.com/events/gaurav-kapoor-live/ET00317331
 - Daily Ka Kaam Hai By Aakash Gupta
   URL: https://in.bookmyshow.com/events/excuse-me-brother-standup-solo-by-aakash-gupta/ET00347268
 - Master Peace - Standup Comedy Show By Madhur Virli
   URL: https://in.bookmyshow.com/events/madhur-virli-live-a-stand-up-comedy-show/ET00350072
-- Bismil Ki Mehfil 2025 - Delhi
-  URL: https://in.bookmyshow.com/events/bismil-ki-mehfil-2025-delhi/ET00443289
 - Comedy Nights @Comedy County
   URL: https://in.bookmyshow.com/events/comedy-nights-comedy-county/ET00446925
-- Jazbaa Ft Rekha Bhardwaj Live in Concert
-  URL: https://in.bookmyshow.com/events/jazbaa-ft-rekha-bharadwaj-live-in-concert/ET00415475
 - PS - I Love You By Pranav Sharma
   URL: https://in.bookmyshow.com/events/taaza-phool-ft-pranav-sharma/ET00408533
 - Kisi Ko Batana Mat By Anubhav Singh Bassi - Delhi
   URL: https://in.bookmyshow.com/events/kisi-ko-batana-mat-by-anubhav-singh-bassi/ET00383732
 - PRACTICE - A Standup Comedy Show by Manik Mahna
   URL: https://in.bookmyshow.com/events/practice-a-standup-comedy-show-by-manik-mahna/ET00436797
-- DJ Chetas - Chandni Bar Meets Bollywood (Gurugram)
-  URL: https://in.bookmyshow.com/events/dj-chetas-chandni-bar-meets-bollywood-gurugram/ET00448540
 - Jo Bolta Hai Wahi Hota Hai Ft. Harsh Gujral- Delhi
   URL: https://in.bookmyshow.com/events/jo-bolta-hai-wahi-hota-hai-ft-harsh-gujral/ET00404471
-- SONU NIGAM LIVE IN CONCERT GURUGRAM
-  URL: https://in.bookmyshow.com/events/sonu-nigam-live-in-concert-gurugram/ET00439782
-- Da Vinci Genius - Interactive Immersive Experience
-  URL: https://in.bookmyshow.com/events/da-vinci-genius-interactive-immersive-experience/ET00440777
 - Jo Bolta Hai Wohi Hota Hai Ft. Harsh Gujral
   URL: https://in.bookmyshow.com/events/jo-bolta-hai-wohi-hota-hai-ft-by-harsh-gujral/ET00319088
-- KidZania Delhi NCR
-  URL: https://in.bookmyshow.com/events/kidzania-delhi-ncr/ET00446821
-- F1 BEYOND THE TRACK: Movie Screening + Experience
-  URL: https://in.bookmyshow.com/events/f1-beyond-the-track-movie-screening-experience/ET00449813
+- So Mini Things with Shraddha Jain- One Last Time
+  URL: https://in.bookmyshow.com/events/so-mini-things-with-shraddha-jain-one-last-time/ET00445356
+- Halki Halki Fati? By Vikas Kush Sharma
+  URL: https://in.bookmyshow.com/events/halki-halki-fati-by-vikas-kush-sharma/ET00407605
+- ALLOW ME - A Standup Comedy Show by Rahul Dua
+  URL: https://in.bookmyshow.com/events/rahul-dua-live-a-standup-comedy-show/ET00404978
+- Love, Death & Ketchup by Varun Grover
+  URL: https://in.bookmyshow.com/events/love-death-ketchup-by-varun-grover/ET00448990
+- Gaurav Gupta Live
+  URL: https://in.bookmyshow.com/events/gaurav-gupta-live-new-content/ET00321882
+- Best of Stand-up - Stand-up Comedy Show
+  URL: https://in.bookmyshow.com/events/best-of-standup-inder-shreya-kd/ET00358274
+- Comedy Show Noida Sector 18
+  URL: https://in.bookmyshow.com/events/comedy-show-noida-sector-18/ET00448749
+- Comedy Nights Noida
+  URL: https://in.bookmyshow.com/events/comedy-nights-noida/ET00407257
+- Telling Lies -A Standup Solo by Aashish Solanki
+  URL: https://in.bookmyshow.com/events/aashish-solanki-live/ET00447106
 
-Removed events (18):
-- The Seventh Sense ft. Rohan Magic
-  URL: https://in.bookmyshow.com/events/the-seventh-sense-ft-rohan-magic/ET00446204
-- Circus Festival
-  URL: https://in.bookmyshow.com/events/circus-festival/ET00450374
-- Saturday Open Mic - Unmukt Delhi
-  URL: https://in.bookmyshow.com/events/open-mic-comedy-poetry-singing-storytelling/ET00360555
-- Naram lehja by Kanha Kamboj
-  URL: https://in.bookmyshow.com/events/naram-lehja-by-kanha-kamboj/ET00411760
-- Rahgir : Kya Jaipur Kya Dilli Tour
-  URL: https://in.bookmyshow.com/events/rahgir-live/ET00352052
-- Poetry Storytelling & Chai Hosted by Ravie Solanky
-  URL: https://in.bookmyshow.com/events/poetry-storytelling-aur-chai/ET00305723
-- Sahas by Amrita Saluja
-  URL: https://in.bookmyshow.com/events/sahas-by-amrita-saluja/ET00440898
-- Voices: Delhi : Poetry and Storytelling Showcase
-  URL: https://in.bookmyshow.com/events/open-mic-delhi-poetry-storytelling-and-music/ET00444399
-- Ujaalon Ka Safar
-  URL: https://in.bookmyshow.com/events/ujaalon-ka-safar/ET00447349
-- Poetry & Storytelling Open Mic - Unheard Diaries
-  URL: https://in.bookmyshow.com/events/unheard-diaries-poetry-storytelling-open-mic/ET00338509
-- Anand Utsav
-  URL: https://in.bookmyshow.com/events/anand-utsav/ET00449539
-- Open Mic Delhi - Comedy, Poetry & Storytelling!!
-  URL: https://in.bookmyshow.com/events/open-mic-delhi-poetry-storytelling/ET00418258
-- Life ka Tamasha by Amandeep Khayal - Delhi
-  URL: https://in.bookmyshow.com/events/life-ka-tamasha-by-amandeep-khayal-delhi/ET00445675
-- Indian Classical Live Dance and Music
-  URL: https://in.bookmyshow.com/events/indian-classical-live-dance-and-music/ET00413493
+Removed events (19):
 - Tum, Main aur Ishq - Ashish Bagrecha
   URL: https://in.bookmyshow.com/events/tum-main-aur-ishq/ET00441194
-- Delhi Open Mic - Poetry & Storytelling
-  URL: https://in.bookmyshow.com/events/open-mic-poetry-storytelling-singing-spoken/ET00366994
+- Sahas by Amrita Saluja
+  URL: https://in.bookmyshow.com/events/sahas-by-amrita-saluja/ET00440898
+- Ujaalon Ka Safar
+  URL: https://in.bookmyshow.com/events/ujaalon-ka-safar/ET00447349
 - Priya Malik's Ishq Hai
   URL: https://in.bookmyshow.com/events/priya-malik-s-ishq-hai/ET00450254
+- Anand Utsav
+  URL: https://in.bookmyshow.com/events/anand-utsav/ET00449539
 - Ghar - An Open Mic For Words By Tape A Tale
   URL: https://in.bookmyshow.com/events/ghar-an-open-mic-for-words-by-tape-a-tale/ET00377836
+- Life ka Tamasha by Amandeep Khayal - Delhi
+  URL: https://in.bookmyshow.com/events/life-ka-tamasha-by-amandeep-khayal-delhi/ET00445675
+- Passenger India Tour 2025 - New Delhi
+  URL: https://in.bookmyshow.com/events/passenger-asia-tour-2025-new-delhi/ET00448826
+- Circus Festival
+  URL: https://in.bookmyshow.com/events/circus-festival/ET00450374
+- Indian Classical Live Dance and Music
+  URL: https://in.bookmyshow.com/events/indian-classical-live-dance-and-music/ET00413493
+- Saturday Open Mic - Unmukt Delhi
+  URL: https://in.bookmyshow.com/events/open-mic-comedy-poetry-singing-storytelling/ET00360555
+- Poetry Storytelling & Chai Hosted by Ravie Solanky
+  URL: https://in.bookmyshow.com/events/poetry-storytelling-aur-chai/ET00305723
+- Poetry & Storytelling Open Mic - Unheard Diaries
+  URL: https://in.bookmyshow.com/events/unheard-diaries-poetry-storytelling-open-mic/ET00338509
+- Open Mic Delhi - Comedy, Poetry & Storytelling!!
+  URL: https://in.bookmyshow.com/events/open-mic-delhi-poetry-storytelling/ET00418258
+- The Seventh Sense ft. Rohan Magic
+  URL: https://in.bookmyshow.com/events/the-seventh-sense-ft-rohan-magic/ET00446204
+- Voices: Delhi : Poetry and Storytelling Showcase
+  URL: https://in.bookmyshow.com/events/open-mic-delhi-poetry-storytelling-and-music/ET00444399
+- Delhi Open Mic - Poetry & Storytelling
+  URL: https://in.bookmyshow.com/events/open-mic-poetry-storytelling-singing-spoken/ET00366994
+- Rambo Circus - Delhi
+  URL: https://in.bookmyshow.com/events/rambo-circus/ET00332998
+- Naram lehja by Kanha Kamboj
+  URL: https://in.bookmyshow.com/events/naram-lehja-by-kanha-kamboj/ET00411760
 
 === New Events Summary ===
 
-1. Van Gogh - An Immersive Story
+1. Rahgir : Kya Jaipur Kya Dilli Tour
    Venue: N/A
    Date: N/A
-   URL: https://in.bookmyshow.com/events/van-gogh-an-immersive-story/ET00440776
+   URL: https://in.bookmyshow.com/events/rahgir-live/ET00352052
 
-2. Rambo Circus - Delhi
-   Venue: N/A
-   Date: N/A
-   URL: https://in.bookmyshow.com/events/rambo-circus/ET00332998
-
-3. Cap Mania Tour ft Himesh Reshammiya
-   Venue: N/A
-   Date: N/A
-   URL: https://in.bookmyshow.com/events/cap-mania-tour-ft-himesh-reshammiya/ET00441454
-
-4. Passenger India Tour 2025 - New Delhi
-   Venue: N/A
-   Date: N/A
-   URL: https://in.bookmyshow.com/events/passenger-asia-tour-2025-new-delhi/ET00448826
-
-5. Gaurav Kapoor Live
-   Venue: N/A
-   Date: N/A
-   URL: https://in.bookmyshow.com/events/gaurav-kapoor-live/ET00317331
-
-6. Daily Ka Kaam Hai By Aakash Gupta
-   Venue: N/A
-   Date: N/A
-   URL: https://in.bookmyshow.com/events/excuse-me-brother-standup-solo-by-aakash-gupta/ET00347268
-
-7. Master Peace - Standup Comedy Show By Madhur Virli
-   Venue: N/A
-   Date: N/A
-   URL: https://in.bookmyshow.com/events/madhur-virli-live-a-stand-up-comedy-show/ET00350072
-
-8. Bismil Ki Mehfil 2025 - Delhi
+2. Bismil Ki Mehfil 2025 - Delhi
    Venue: N/A
    Date: N/A
    URL: https://in.bookmyshow.com/events/bismil-ki-mehfil-2025-delhi/ET00443289
 
-9. Comedy Nights @Comedy County
+3. Gaurav Kapoor Live
+   Venue: N/A
+   Date: N/A
+   URL: https://in.bookmyshow.com/events/gaurav-kapoor-live/ET00317331
+
+4. Daily Ka Kaam Hai By Aakash Gupta
+   Venue: N/A
+   Date: N/A
+   URL: https://in.bookmyshow.com/events/excuse-me-brother-standup-solo-by-aakash-gupta/ET00347268
+
+5. Master Peace - Standup Comedy Show By Madhur Virli
+   Venue: N/A
+   Date: N/A
+   URL: https://in.bookmyshow.com/events/madhur-virli-live-a-stand-up-comedy-show/ET00350072
+
+6. Comedy Nights @Comedy County
    Venue: N/A
    Date: N/A
    URL: https://in.bookmyshow.com/events/comedy-nights-comedy-county/ET00446925
 
-10. Jazbaa Ft Rekha Bhardwaj Live in Concert
+7. PS - I Love You By Pranav Sharma
    Venue: N/A
    Date: N/A
-   URL: https://in.bookmyshow.com/events/jazbaa-ft-rekha-bharadwaj-live-in-concert/ET00415475
+   URL: https://in.bookmyshow.com/events/taaza-phool-ft-pranav-sharma/ET00408533
+
+8. Kisi Ko Batana Mat By Anubhav Singh Bassi - Delhi
+   Venue: N/A
+   Date: N/A
+   URL: https://in.bookmyshow.com/events/kisi-ko-batana-mat-by-anubhav-singh-bassi/ET00383732
+
+9. PRACTICE - A Standup Comedy Show by Manik Mahna
+   Venue: N/A
+   Date: N/A
+   URL: https://in.bookmyshow.com/events/practice-a-standup-comedy-show-by-manik-mahna/ET00436797
+
+10. Jo Bolta Hai Wahi Hota Hai Ft. Harsh Gujral- Delhi
+   Venue: N/A
+   Date: N/A
+   URL: https://in.bookmyshow.com/events/jo-bolta-hai-wahi-hota-hai-ft-harsh-gujral/ET00404471
