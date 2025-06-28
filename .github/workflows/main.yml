@@ -36,6 +36,11 @@ jobs:
         mkdir -p reports
         mkdir -p screenshots
 
+    - name: Cleanup Previous Screenshots
+      run: |
+        rm -f screenshots/*.png
+        echo "Cleared previous screenshots"
+        
     - name: Run URL Fetcher
       run: python 01_url_fetcher.py
 
@@ -82,8 +87,3 @@ jobs:
       with:
         name: event-report
         path: reports/*.txt
-
-    - name: Cleanup Screenshots
-      run: |
-        rm -rf screenshots/*
-        echo "Screenshots folder cleared"
