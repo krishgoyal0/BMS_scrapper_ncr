@@ -13,9 +13,8 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
       with:
-        # These settings are crucial for being able to push back changes
         persist-credentials: true
-        fetch-depth: 0  # Get full history for proper diffs
+        fetch-depth: 0
 
     - name: Set up Python
       uses: actions/setup-python@v4
@@ -58,20 +57,16 @@ jobs:
 
     - name: Commit and push changes
       run: |
-        # Configure git
         git config --global user.name "GitHub Actions"
         git config --global user.email "actions@github.com"
-        
-        # Add all changed files
         git add data/bookmyshow/*.json
         git add reports/*.txt
         git add screenshots/*.png
         git add events.xlsx
+        git add historical/*.json       # <- ENSURES HISTORICAL FILES ARE TRACKED
+        git add all_event_details.json  # <- ENSURES MAIN JSON IS TRACKED
         
-        # Commit if there are changes
-        git diff-index --quiet HEAD || git commit -m "Update generated files from workflow run [skip ci]"
-        
-        # Push changes
+        git diff-index --quiet HEAD || git commit -m "Update generated files [skip ci]"
         git push
 
     - name: Upload Screenshots as Artifact
