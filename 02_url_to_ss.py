@@ -149,8 +149,3 @@ if __name__ == "__main__":
     event_report_file = Path("reports") / f"event_report_{datetime.now().strftime('%Y-%m-%d')}.txt"
     print(f"Using event report: {event_report_file}")
     asyncio.run(process_event_urls_from_file(event_report_file))
-
-
-#THIS SCRIPT IS WORKING THE BEST AND MOST SUITABLE WAY.
-
-#THIS SCRIPT IS WORKING THE BEST AND MOST SUITABLE WAY.
