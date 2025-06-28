@@ -82,3 +82,8 @@ jobs:
       with:
         name: event-report
         path: reports/*.txt
+
+    - name: Cleanup Screenshots
+      run: |
+        rm -rf screenshots/*
+        echo "Screenshots folder cleared"
