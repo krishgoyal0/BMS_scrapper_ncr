@@ -1,0 +1,93 @@
+
+=== Event Comparison Results ===
+Old file: 20 events
+New file: 6 events
+Comparison time: 2025-06-29 08:32:48
+
+Newly added events (6):
+- Best of Stand-up - Stand-up Comedy Show
+  URL: https://in.bookmyshow.com/events/best-of-standup-inder-shreya-kd/ET00358274
+- Bismil Ki Mehfil 2025 - Delhi
+  URL: https://in.bookmyshow.com/events/bismil-ki-mehfil-2025-delhi/ET00443289
+- Rambo Circus - Delhi
+  URL: https://in.bookmyshow.com/events/rambo-circus/ET00332998
+- Cap Mania Tour ft Himesh Reshammiya
+  URL: https://in.bookmyshow.com/events/cap-mania-tour-ft-himesh-reshammiya/ET00441454
+- Master Peace - Standup Comedy Show By Madhur Virli
+  URL: https://in.bookmyshow.com/events/madhur-virli-live-a-stand-up-comedy-show/ET00350072
+- Passenger India Tour 2025 - New Delhi
+  URL: https://in.bookmyshow.com/events/passenger-asia-tour-2025-new-delhi/ET00448826
+
+Removed events (20):
+- Candle Making Workshop
+  URL: https://in.bookmyshow.com/events/candle-making-workshop/ET00450337
+- Scented Candle Making
+  URL: https://in.bookmyshow.com/events/aromagic-candle-crafting-workshop/ET00370912
+- Resin Beach Art
+  URL: https://in.bookmyshow.com/events/resin-beach-art/ET00400406
+- Texture Art
+  URL: https://in.bookmyshow.com/events/texture-art-workshop/ET00362143
+- Pottery on a Weekday.
+  URL: https://in.bookmyshow.com/events/pottery-on-a-weekday/ET00440567
+- Paint with Puppies by Barket
+  URL: https://in.bookmyshow.com/events/valentine-s-special-paint-with-puppies-kittens/ET00432354
+- Perfume Making Workshop
+  URL: https://in.bookmyshow.com/events/perfume-making-workshop/ET00384549
+- ALLOW ME - A Standup Comedy Show by Rahul Dua
+  URL: https://in.bookmyshow.com/events/rahul-dua-live-a-standup-comedy-show/ET00404978
+- Clay Sculpting Workshop
+  URL: https://in.bookmyshow.com/events/clay-sculpting-workshop/ET00430408
+- Japanese Kintsugi Workshop
+  URL: https://in.bookmyshow.com/events/japanese-kintsugi-workshop/ET00439680
+- Acting & Theatre Workshop
+  URL: https://in.bookmyshow.com/events/acting-theatre-workshop/ET00414838
+- Pottery Workshop Delhi.
+  URL: https://in.bookmyshow.com/events/pottery-workshop-delhi/ET00398245
+- Japanese Kintsugi Workshop
+  URL: https://in.bookmyshow.com/events/batik-art/ET00437692
+- Koi Pond Resin Art
+  URL: https://in.bookmyshow.com/events/koi-pond-resin-art/ET00427677
+- Clay Trinket Tray Workshop
+  URL: https://in.bookmyshow.com/events/clay-trinket-tray-workshop/ET00416123
+- Magnet Moments: Make and Stick Polaroid
+  URL: https://in.bookmyshow.com/events/polaroid-magnet-by-social-sozo/ET00445779
+- PS - I Love You By Pranav Sharma
+  URL: https://in.bookmyshow.com/events/taaza-phool-ft-pranav-sharma/ET00408533
+- Pottery Date
+  URL: https://in.bookmyshow.com/events/pottery-date/ET00370222
+- Pottery Workshop
+  URL: https://in.bookmyshow.com/events/pottery-workshop/ET00448070
+- Hand Built Pottery
+  URL: https://in.bookmyshow.com/events/hand-built-pottery/ET00448075
+
+=== New Events Summary ===
+
+1. Best of Stand-up - Stand-up Comedy Show
+   Venue: N/A
+   Date: N/A
+   URL: https://in.bookmyshow.com/events/best-of-standup-inder-shreya-kd/ET00358274
+
+2. Bismil Ki Mehfil 2025 - Delhi
+   Venue: N/A
+   Date: N/A
+   URL: https://in.bookmyshow.com/events/bismil-ki-mehfil-2025-delhi/ET00443289
+
+3. Rambo Circus - Delhi
+   Venue: N/A
+   Date: N/A
+   URL: https://in.bookmyshow.com/events/rambo-circus/ET00332998
+
+4. Cap Mania Tour ft Himesh Reshammiya
+   Venue: N/A
+   Date: N/A
+   URL: https://in.bookmyshow.com/events/cap-mania-tour-ft-himesh-reshammiya/ET00441454
+
+5. Master Peace - Standup Comedy Show By Madhur Virli
+   Venue: N/A
+   Date: N/A
+   URL: https://in.bookmyshow.com/events/madhur-virli-live-a-stand-up-comedy-show/ET00350072
+
+6. Passenger India Tour 2025 - New Delhi
+   Venue: N/A
+   Date: N/A
+   URL: https://in.bookmyshow.com/events/passenger-asia-tour-2025-new-delhi/ET00448826
