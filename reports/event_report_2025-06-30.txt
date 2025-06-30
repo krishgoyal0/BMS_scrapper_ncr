@@ -1,0 +1,59 @@
+
+=== Event Comparison Results ===
+Old file: 6 events
+New file: 6 events
+Comparison time: 2025-06-30 08:36:28
+
+Newly added events (6):
+- The Lineup ft. Chirag, Pranav, Kaustubh & Vivek
+  URL: https://in.bookmyshow.com/events/dilli-k-laundey/ET00403451
+- Made for Media - An Evening with Living Legends
+  URL: https://in.bookmyshow.com/events/made-for-media-an-evening-with-living-legends/ET00450905
+- Cap Mania Tour ft Himesh Reshammiya
+  URL: https://in.bookmyshow.com/events/cap-mania-tour-ft-himesh-reshammiya/ET00441454
+- Van Gogh - An Immersive Story
+  URL: https://in.bookmyshow.com/events/van-gogh-an-immersive-story/ET00440776
+- Master Peace - Standup Comedy Show By Madhur Virli
+  URL: https://in.bookmyshow.com/events/madhur-virli-live-a-stand-up-comedy-show/ET00350072
+- Bismil Ki Mehfil 2025 - Delhi
+  URL: https://in.bookmyshow.com/events/bismil-ki-mehfil-2025-delhi/ET00443289
+
+Removed events (3):
+- Best of Stand-up - Stand-up Comedy Show
+  URL: https://in.bookmyshow.com/events/best-of-standup-inder-shreya-kd/ET00358274
+- Passenger India Tour 2025 - New Delhi
+  URL: https://in.bookmyshow.com/events/passenger-asia-tour-2025-new-delhi/ET00448826
+- Rambo Circus - Delhi
+  URL: https://in.bookmyshow.com/events/rambo-circus/ET00332998
+
+=== New Events Summary ===
+
+1. The Lineup ft. Chirag, Pranav, Kaustubh & Vivek
+   Venue: N/A
+   Date: N/A
+   URL: https://in.bookmyshow.com/events/dilli-k-laundey/ET00403451
+
+2. Made for Media - An Evening with Living Legends
+   Venue: N/A
+   Date: N/A
+   URL: https://in.bookmyshow.com/events/made-for-media-an-evening-with-living-legends/ET00450905
+
+3. Cap Mania Tour ft Himesh Reshammiya
+   Venue: N/A
+   Date: N/A
+   URL: https://in.bookmyshow.com/events/cap-mania-tour-ft-himesh-reshammiya/ET00441454
+
+4. Van Gogh - An Immersive Story
+   Venue: N/A
+   Date: N/A
+   URL: https://in.bookmyshow.com/events/van-gogh-an-immersive-story/ET00440776
+
+5. Master Peace - Standup Comedy Show By Madhur Virli
+   Venue: N/A
+   Date: N/A
+   URL: https://in.bookmyshow.com/events/madhur-virli-live-a-stand-up-comedy-show/ET00350072
+
+6. Bismil Ki Mehfil 2025 - Delhi
+   Venue: N/A
+   Date: N/A
+   URL: https://in.bookmyshow.com/events/bismil-ki-mehfil-2025-delhi/ET00443289
